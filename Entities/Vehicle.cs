@@ -10,7 +10,11 @@ namespace Car_Booking_App.Entities
           [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
           public int VehicleId { get; set; }
 
-          [Required, StringLength(50), Column(TypeName = "varchar(50)")]
+          [Required, StringLength(50), Column(TypeName = "nvarchar(50)")]
           public string VehicleName { get; set;}
+
+
+          [Required, Range(1, byte.MaxValue), Column(TypeName = "smallint")]
+          public byte SeatsNumber { get; set; }
      }
 }

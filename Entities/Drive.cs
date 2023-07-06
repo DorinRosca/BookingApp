@@ -11,7 +11,7 @@ namespace Car_Booking_App.Entities
           [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
           public int DriveId { get; set; }
 
-          [Required, StringLength(50), Column(TypeName = "varchar(50)")]
+          [Required, StringLength(50), Column(TypeName = "nvarchar(50)")]
           public string DriveName { get; set; }
      }
 }

@@ -10,7 +10,8 @@ namespace Car_Booking_App.Entities
           [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
           public int BrandId { get; set; }
 
-          [Required, StringLength(50),Column(TypeName = "varchar(50)")]
+          [Required, StringLength(50),Column(TypeName = "nvarchar(50)")]
           public string BrandName { get; set; }
+
      }
 }
