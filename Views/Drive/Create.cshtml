@@ -1,0 +1,12 @@
+﻿@using CarBookingApp.ViewModels
+@model DriveViewModel
+
+@using (Html.BeginForm("Create", "Drive", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="DriveName">Drive Name</label>
+        <input type="" class="form-control" id="DriveName" name="DriveName">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+}

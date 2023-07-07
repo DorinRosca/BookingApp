@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EiL5QHJBR4JQxYqYhagkecFVeH1XebUkSozznqkF5b8=",
+  "Hash": "X5C8iCnStffIpYrhQPJWql6Qh9HIEK9QuhDuGt4bjJ8=",
   "Source": "CarBookingApp",
   "BasePath": "_content/CarBookingApp",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\main.css"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\css\\styles.css",
+      "SourceId": "CarBookingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\",
+      "BasePath": "_content/CarBookingApp",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
       "Identity": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\favicon.ico",
