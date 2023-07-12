@@ -1,0 +1,49 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+     ViewData["Title"] = "Login";
+}
+@model CarBookingApp.ViewModels.LoginViewModel
+
+<h1>Login</h1>
+
+
+<body>
+<div class="container">
+     <div class="row">
+          <div class="col-lg-10 col-xl-9 mx-auto">
+               <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+                    <div class="card-img-left d-none d-md-flex">
+                         <!-- Background image for card set in CSS! -->
+                    </div>
+                    <div class="card-body p-4 p-sm-5">
+                         <h5 class="card-title text-center mb-5 fw-light fs-5">Login</h5>
+                         <form method="post">
+                              <div asp-validation-summary="All" class="text-danger"></div>
+                              <div class="form-floating mb-3">
+                                   <label asp-for="Email"></label>
+                                   <input asp-for="Email" class="form-control" />
+                                   <span asp-validation-for="Email" class="text-danger"></span>
+                              </div>
+                              <div class="form-floating mb-3">
+                                   <label asp-for="Password"></label>
+                                   <input asp-for="Password" class="form-control" />
+                                   <span asp-validation-for="Password" class="text-danger"></span>
+                              </div>
+
+                              <div class="d-grid mb-2">
+                                   <div class="custom-control custom-checkbox">
+                                        <input asp-for="RememberMe" type="checkbox" class="custom-control-input">
+                                        <label class="custom-control-label" asp-for="RememberMe">@Html.DisplayNameFor(m => m.RememberMe)</label>
+                                   </div>
+
+                              </div>
+                              <div class="d-grid mb-2">
+                                   <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Login</button>
+                              </div>
+                         </form>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+</body>

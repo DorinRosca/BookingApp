@@ -1,0 +1,20 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using CarBookingApp.ViewModels
+@model VehicleViewModel
+
+<form method="post" action="@Url.Action("CreateVehicle", "Admin")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="VehicleName">Vehicle Name</label>
+          <input type="text" class="form-control" id="VehicleName" name="VehicleName">
+          <label for="SeatsNumber">Number of Seats</label>
+          <input type="text" class="form-control" id="SeatsNumber" name="SeatsNumber">
+
+     </div>
+
+     <button type="submit" class="btn btn-primary">Create</button>
+</form>

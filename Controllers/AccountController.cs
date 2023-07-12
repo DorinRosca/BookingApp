@@ -20,7 +20,10 @@ namespace CarBookingApp.Controllers
           {
                return View();
           }
-
+          public IActionResult Index()
+          {
+               return View();
+          }
           [HttpPost]
           public async Task<IActionResult> Register(RegisterViewModel model)
           {
@@ -46,7 +49,7 @@ namespace CarBookingApp.Controllers
                          ModelState.AddModelError("", error.Description);
                     }
 
-                    ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
+                    ModelState.AddModelError(string.Empty, "Invalid Register Attempt");
 
                }
                return View(model);

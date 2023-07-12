@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X5C8iCnStffIpYrhQPJWql6Qh9HIEK9QuhDuGt4bjJ8=",
+  "Hash": "bC7kqVumcbrj4PvejMVXQQhisIKnt/+7Yh2yBYMBVxg=",
   "Source": "CarBookingApp",
   "BasePath": "_content/CarBookingApp",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CarBookingApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\css\\bootstrap-datepicker3.min.css",
+      "SourceId": "CarBookingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\",
+      "BasePath": "_content/CarBookingApp",
+      "RelativePath": "css/bootstrap-datepicker3.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-datepicker3.min.css"
     },
     {
       "Identity": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\css\\main.css",
@@ -440,6 +457,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\View1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\js\\bootstrap-datepicker.min.js",
+      "SourceId": "CarBookingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\",
+      "BasePath": "_content/CarBookingApp",
+      "RelativePath": "js/bootstrap-datepicker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\js\\script.js",
+      "SourceId": "CarBookingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\",
+      "BasePath": "_content/CarBookingApp",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
     }
   ]
 }

@@ -6,8 +6,12 @@ using CarBookingApp.Interfaces;
 using CarBookingApp.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddScoped<IDrive, DriveRepository>();
-
+builder.Services.AddScoped<IAdmin, AdminRepository>();
+builder.Services.AddScoped<ICar, CarRepository>();
+builder.Services.AddScoped<IOrder, OrderRepository>();
+builder.Services.AddScoped<IRole, RoleRepository>();
+builder.Services.AddScoped<IUser, UserRepository>();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataContext>(options =>
@@ -32,18 +36,6 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
-app.MapControllerRoute(
-     name: "Create",
-     pattern: "Drive/Create",
-     defaults: new { controller = "Drive", action = "Create" }
-);
-
-app.MapControllerRoute(
-     name: "Delete",
-     pattern: "Drive/Delete/{id}",
-     defaults: new { controller = "Drive", action = "Delete" }
-);
 
 app.MapControllerRoute(
      name: "default",

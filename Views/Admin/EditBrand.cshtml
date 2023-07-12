@@ -1,0 +1,17 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using CarBookingApp.ViewModels
+@model BrandViewModel
+
+<form method="post" action="@Url.Action("EditBrand", "Admin")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="BrandName">Brand Name</label>
+          <input type="hidden" class="form-control" id="BrandId" name="BrandId" value="@Model.BrandId">
+          <input type="text" class="form-control" id="BrandName" name="BrandName" value="@Model.BrandName">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Update</button>
+</form>

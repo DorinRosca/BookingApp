@@ -7,7 +7,7 @@ namespace CarBookingApp.ViewModels
      public class DriveViewModel
      {
           [Required]
-          public int DriveId { get; set; }
+          public byte DriveId { get; set; }
 
           [Required, StringLength(50)]
           public string DriveName { get; set; }

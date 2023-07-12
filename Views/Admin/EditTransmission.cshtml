@@ -1,0 +1,17 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using CarBookingApp.ViewModels
+@model TransmissionViewModel
+
+<form method="post" action="@Url.Action("EditTransmission", "Admin")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="TransmissionName">TransmissionName</label>
+          <input type="hidden" class="form-control" id="TransmissionId" name="TransmissionId" value="@Model.TransmissionId">
+          <input type="text" class="form-control" id="TransmissionName" name="TransmissionName" value="@Model.TransmissionName">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Update</button>
+</form>

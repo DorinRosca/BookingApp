@@ -1,0 +1,17 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using CarBookingApp.ViewModels
+@model FuelTypeViewModel
+
+<form method="post" action="@Url.Action("CreateFuelType", "Admin")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="FuelTypeName">FuelType Name</label>
+          <input type="text" class="form-control" id="FuelTypeName" name="FuelTypeName">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Create</button>
+</form>

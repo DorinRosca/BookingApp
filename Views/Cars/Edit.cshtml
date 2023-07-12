@@ -1,0 +1,84 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using CarBookingApp.ViewModels
+@model CarEditViewModel
+
+<form method="post" action="@Url.Action("Edit", "Cars")" enctype="multipart/form-data">
+     @Html.AntiForgeryToken()
+     <input type="hidden" class="form-control" id="CarId" name="CarId" value="@Model.CarId">
+     @{
+          var base64 = Convert.ToBase64String(Model.Image);
+     }
+
+     <input type="hidden" class="form-control" id="Image" name="Image" value="@base64">
+
+     <div class="form-group">
+          <label asp-for="BrandId">Brand:</label>
+          <select asp-for="BrandId" asp-items="@Model.Brand.Select(b => new SelectListItem { Value = b.BrandId.ToString(), Text = b.BrandName })" class="form-control">
+               <option value="">Select Brand</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="DriveId">Drive:</label>
+          <select asp-for="DriveId" asp-items="@Model.Drive.Select(d => new SelectListItem { Value = d.DriveId.ToString(), Text = d.DriveName })" class="form-control">
+               <option value="">Select Drive</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="FuelTypeId">Fuel Type:</label>
+          <select asp-for="FuelTypeId" asp-items="@Model.FuelType.Select(f => new SelectListItem { Value = f.FuelTypeId.ToString(), Text = f.FuelTypeName })" class="form-control">
+               <option value="">Select Fuel Type</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="TransmissionId">Transmission:</label>
+          <select asp-for="TransmissionId" asp-items="@Model.Transmission.Select(t => new SelectListItem { Value = t.TransmissionId.ToString(), Text = t.TransmissionName })" class="form-control">
+               <option value="">Select Transmission</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="VehicleId">Vehicle:</label>
+          <select asp-for="VehicleId" asp-items="@Model.Vehicle.Select(v => new SelectListItem { Value = v.VehicleId.ToString(), Text = v.VehicleName })" class="form-control">
+               <option value="">Select Vehicle</option>
+          </select>
+     </div>
+     
+     <div class="form-group">
+          <label asp-for="ModelName">Model Name:</label>
+          <input type="text" class="form-control" id="ModelName" name="ModelName" value="@Model.ModelName">
+
+     </div>
+
+     <div class="form-group">
+          <label asp-for="ModelName">Model Name:</label>
+          <input type="text" class="form-control" id="ModelName" name="ModelName" value="@Model.ModelName">
+
+     </div>
+     
+     <div class="form-group">
+          <label asp-for="Year">Year:</label>
+          <input type="text" class="form-control" id="Year" name="Year" value="@Model.Year">
+
+     </div>
+     
+     <div class="form-group">
+          <label asp-for="PricePerDay">Price Per Day:</label>
+          <input type="text" class="form-control" id="PricePerDay" name="PricePerDay" value="@Model.PricePerDay">
+
+     </div>
+     
+     
+     <div class="form-group">
+          <label asp-for="ImageFile">Image File:</label>
+          <input type="file" class="form-control" id="ImageFile" name="ImageFile" value="@Model.ImageFile">
+     </div>
+
+     
+     <button type="submit" class="btn btn-primary">Save</button>
+</form>   

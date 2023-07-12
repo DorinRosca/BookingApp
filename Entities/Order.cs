@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
-using IdentityUser = CarBookingApp.Migrations.IdentityUser;
 
 namespace Car_Booking_App.Entities
 {
@@ -15,7 +14,10 @@ namespace Car_Booking_App.Entities
 
           [Required, ForeignKey("Customer")]
           public int CustomerId { get; set; }
-          public Customer Customer { get; set; }
+
+          [Required]
+          [ForeignKey(nameof(User))]
+          public string UserId { get; set; }
 
           [Required, ForeignKey("Car")]
           public int CarId { get; set; }
@@ -32,11 +34,9 @@ namespace Car_Booking_App.Entities
           public double TotalAmount { get; set; }
 
           [Required,ForeignKey("Status")]
-          public int StatusId { get; set; }
+          public byte StatusId { get; set; }
           public Status Status { get; set; }
-
-
-
+          public IdentityUser User { get; set; }  
 
      }
 }

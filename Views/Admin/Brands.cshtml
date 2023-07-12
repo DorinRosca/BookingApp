@@ -1,0 +1,54 @@
+﻿@using CarBookingApp.ViewModels
+
+@model IEnumerable<CarBookingApp.ViewModels.BrandViewModel>
+
+<div class="container-lg">
+     <div class="table-responsive">
+          <div class="table-wrapper">
+               <div class="table-title">
+                    <div class="row">
+                         <div class="col-sm-8">
+                              <h2>Brand <b>Details</b></h2>
+                         </div>
+                         <div class="col-sm-4">
+                              <a href="@Url.Action("CreateBrand")" class="btn btn-info add-new">
+                                   <i class="fa fa-plus"></i> Add New
+                              </a>
+                         </div>
+                    </div>
+               </div>
+               <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                         <th>Name</th>
+                         <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                         @foreach (var brand in Model)
+                         {
+                              <tr>
+                                   <td>@brand.BrandName</td>
+                                   <td>
+                                        <div class="d-flex align-items-center">
+                                             <button class="edit mr-2" title="EditBrand" data-toggle="tooltip"
+                                                onclick="location.href='/Admin/EditBrand/@brand.BrandId'">
+                                                  <i class="material-icons">&#xE254;</i>
+                                             </button>
+                                             <form method="post" action="@Url.Action("DeleteBrand", new { id = brand.BrandId })" style="display: inline;">
+                                                  @Html.AntiForgeryToken()
+                                                  <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
+                                                       <i class="material-icons">&#xE872;</i>
+                                                  </button>
+                                             </form>
+                                        </div>
+
+                                   </td>
+                              </tr>
+                         }
+                    </tbody>
+               </table>
+          </div>
+     </div>
+</div>
+

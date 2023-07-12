@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CarBookingApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\css\\bootstrap-datepicker3.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datepicker3.min.css"
+    },
+    {
       "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
     },
@@ -95,6 +99,14 @@
     {
       "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\user.png",
       "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CarBookingApp.Microsoft.AspNetCore.StaticWebAssets.props",

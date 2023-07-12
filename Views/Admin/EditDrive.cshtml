@@ -1,0 +1,17 @@
+﻿@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using CarBookingApp.ViewModels
+@model DriveViewModel
+
+<form method="post" action="@Url.Action("EditDrive", "Admin")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="DriveName">Drive Name</label>
+          <input type="hidden" class="form-control" id="DriveId" name="DriveId" value="@Model.DriveId">
+          <input type="text" class="form-control" id="DriveName" name="DriveName" value="@Model.DriveName">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Update</button>
+</form>

@@ -24,11 +24,11 @@ namespace CarBookingApp.Migrations
 
             modelBuilder.Entity("Car_Booking_App.Entities.Brand", b =>
                 {
-                    b.Property<int>("BrandId")
+                    b.Property<byte>("BrandId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("tinyint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BrandId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<byte>("BrandId"));
 
                     b.Property<string>("BrandName")
                         .IsRequired()
@@ -51,21 +51,20 @@ namespace CarBookingApp.Migrations
                     b.Property<bool>("Availability")
                         .HasColumnType("bit");
 
-                    b.Property<int>("BrandId")
-                        .HasColumnType("int");
+                    b.Property<byte>("BrandId")
+                        .HasColumnType("tinyint");
 
-                    b.Property<int>("DriveId")
-                        .HasColumnType("int");
+                    b.Property<byte>("DriveId")
+                        .HasColumnType("tinyint");
 
-                    b.Property<int>("FuelTypeId")
-                        .HasColumnType("int");
+                    b.Property<byte>("FuelTypeId")
+                        .HasColumnType("tinyint");
 
-                    b.Property<string>("LicensePlate")
+                    b.Property<byte[]>("Image")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("varbinary(max)");
 
-                    b.Property<string>("Model")
+                    b.Property<string>("ModelName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -73,11 +72,11 @@ namespace CarBookingApp.Migrations
                     b.Property<decimal>("PricePerDay")
                         .HasColumnType("decimal(8,2)");
 
-                    b.Property<int>("TransmissionId")
-                        .HasColumnType("int");
+                    b.Property<byte>("TransmissionId")
+                        .HasColumnType("tinyint");
 
-                    b.Property<int>("VehicleId")
-                        .HasColumnType("int");
+                    b.Property<byte>("VehicleId")
+                        .HasColumnType("tinyint");
 
                     b.Property<short>("Year")
                         .HasColumnType("smallint");
@@ -97,66 +96,13 @@ namespace CarBookingApp.Migrations
                     b.ToTable("Car");
                 });
 
-            modelBuilder.Entity("Car_Booking_App.Entities.Customer", b =>
-                {
-                    b.Property<int>("CustomerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("IDNP")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("CustomerId");
-
-                    b.ToTable("Customer");
-                });
-
             modelBuilder.Entity("Car_Booking_App.Entities.Drive", b =>
                 {
-                    b.Property<int>("DriveId")
+                    b.Property<byte>("DriveId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("tinyint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DriveId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<byte>("DriveId"));
 
                     b.Property<string>("DriveName")
                         .IsRequired()
@@ -170,11 +116,11 @@ namespace CarBookingApp.Migrations
 
             modelBuilder.Entity("Car_Booking_App.Entities.FuelType", b =>
                 {
-                    b.Property<int>("FuelTypeId")
+                    b.Property<byte>("FuelTypeId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("tinyint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FuelTypeId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<byte>("FuelTypeId"));
 
                     b.Property<string>("FuelTypeName")
                         .IsRequired()
@@ -206,30 +152,34 @@ namespace CarBookingApp.Migrations
                     b.Property<DateTime>("RentalStartDate")
                         .HasColumnType("datetime");
 
-                    b.Property<int>("StatusId")
-                        .HasColumnType("int");
+                    b.Property<byte>("StatusId")
+                        .HasColumnType("tinyint");
 
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(8,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("OrderId");
 
                     b.HasIndex("CarId");
 
-                    b.HasIndex("CustomerId");
-
                     b.HasIndex("StatusId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Order");
                 });
 
             modelBuilder.Entity("Car_Booking_App.Entities.Status", b =>
                 {
-                    b.Property<int>("StatusId")
+                    b.Property<byte>("StatusId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("tinyint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StatusId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<byte>("StatusId"));
 
                     b.Property<string>("StatusName")
                         .IsRequired()
@@ -243,11 +193,11 @@ namespace CarBookingApp.Migrations
 
             modelBuilder.Entity("Car_Booking_App.Entities.Transmission", b =>
                 {
-                    b.Property<int>("TransmissionId")
+                    b.Property<byte>("TransmissionId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("tinyint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TransmissionId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<byte>("TransmissionId"));
 
                     b.Property<string>("TransmissionName")
                         .IsRequired()
@@ -261,14 +211,14 @@ namespace CarBookingApp.Migrations
 
             modelBuilder.Entity("Car_Booking_App.Entities.Vehicle", b =>
                 {
-                    b.Property<int>("VehicleId")
+                    b.Property<byte>("VehicleId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("tinyint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VehicleId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<byte>("VehicleId"));
 
-                    b.Property<short>("SeatsNumber")
-                        .HasColumnType("smallint");
+                    b.Property<byte>("SeatsNumber")
+                        .HasColumnType("tinyint");
 
                     b.Property<string>("VehicleName")
                         .IsRequired()
@@ -529,23 +479,23 @@ namespace CarBookingApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Car_Booking_App.Entities.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Car_Booking_App.Entities.Status", "Status")
                         .WithMany()
                         .HasForeignKey("StatusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Car");
 
-                    b.Navigation("Customer");
-
                     b.Navigation("Status");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

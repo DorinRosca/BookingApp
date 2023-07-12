@@ -7,9 +7,9 @@ namespace Car_Booking_App.Entities
      [Table("Drive")]
      public class Drive
      {
-          [Required]
-          [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-          public int DriveId { get; set; }
+          [Key]
+          [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+          public byte DriveId { get; set; }
 
           [Required, StringLength(50), Column(TypeName = "nvarchar(50)")]
           public string DriveName { get; set; }

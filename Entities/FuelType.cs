@@ -6,9 +6,9 @@ namespace Car_Booking_App.Entities
           [Table("FuelType")]
      public class FuelType
      {
-          [Required]
-          [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-          public int FuelTypeId { get; set; }
+          [Key]
+          [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+          public byte FuelTypeId { get; set; }
 
           [Required, StringLength(50), Column(TypeName = "nvarchar(50)")]
           public string FuelTypeName { get; set; }
