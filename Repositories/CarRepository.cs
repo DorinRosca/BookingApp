@@ -5,6 +5,7 @@ using CarBookingApp.Interfaces;
 using CarBookingApp.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using System.Collections;
+using System.Diagnostics;
 
 namespace CarBookingApp.Repositories
 {
@@ -77,26 +78,45 @@ namespace CarBookingApp.Repositories
                }
                return model;
           }
-          public async Task<IEnumerable<CarViewModel>> GetAllAvailableCars()
+          public async Task<CarFilterViewModel> GetFilteredCarList(CarFilterViewModel model)
           {
                using (var context = _dataContext)
                {
-                    var carList = await context.Car
+                    var query = context.Car
                          .Include(c => c.Brand)
                          .Include(c => c.FuelType)
                          .Include(c => c.Transmission)
                          .Include(c => c.Drive)
                          .Include(c => c.Vehicle)
-                         .ToListAsync();
-                    var cars = _mapper.ProjectTo<CarViewModel>(carList.AsQueryable()).ToList();
-                    foreach (var item in cars )
+                         .AsQueryable();
+
+                    if (model.SelectedBrandId != 0 )
+                    {
+                         query = query.Where(c => c.BrandId == model.SelectedBrandId);
+                    }
+
+                    if (model.SelectedVehicleId != 0)
+                    {
+                         query = query.Where(c => c.VehicleId == model.SelectedVehicleId);
+                    }
+
+                    var carList = await query.ToListAsync();
+                    CarFilterViewModel cars = new CarFilterViewModel();
+                         cars.Cars= _mapper.Map<List<CarViewModel>>(carList);
+
+                    foreach (var item in cars.Cars)
                     {
                          item.ImageFile = GetImage(item);
                     }
+
+
+                    cars.Brands = await context.Brand.ToListAsync();
+                    cars.Vehicles = await context.Vehicle.ToListAsync();
+
                     return cars;
                }
-
           }
+
 
           public async Task<CarViewModel> GetSingleCar(int id)
           {

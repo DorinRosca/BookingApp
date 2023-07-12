@@ -12,10 +12,10 @@ namespace CarBookingApp.Controllers
           {
                this._car = car;
           }
-          public ActionResult Index()
+          public ActionResult Index(CarFilterViewModel model = null)
           {
-               var carList = _car.GetAllAvailableCars();
-               return View(carList.Result);
+               var carList = _car.GetFilteredCarList(model).Result;
+               return View(carList);
           }
           [HttpPost]
           [ValidateAntiForgeryToken]

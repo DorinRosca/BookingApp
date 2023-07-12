@@ -6,7 +6,7 @@ namespace CarBookingApp.Interfaces
      {
           public CarCreateViewModel GetCarDetails();
           public Task<bool> CreateCar(CarCreateViewModel model);
-          public Task<IEnumerable<CarViewModel>> GetAllAvailableCars();
+          public Task<CarFilterViewModel> GetFilteredCarList(CarFilterViewModel model);
           public Task<CarViewModel> GetSingleCar(int id);
           public Task<CarEditViewModel> GetEditCar(int id);
 

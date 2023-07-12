@@ -25,8 +25,44 @@
       "PackagePath": "staticwebassets\\img\\2people.svg"
     },
     {
-      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\View1.png",
-      "PackagePath": "staticwebassets\\img\\View1.png"
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\Honda cr-v.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Honda cr-v.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\Koenigsegg.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Koenigsegg.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\Mercedes.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Mercedes.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\Nissan-gtr.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Nissan-gtr.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\Rolls-Roice-Wraith.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Rolls-Roice-Wraith.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\Rolls-Royce-white.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Rolls-Royce-white.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\ferrari.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\ferrari.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\rolls-royce.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\rolls-royce.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\suv-bl.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\suv-bl.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\Cars\\suv.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\suv.png"
     },
     {
       "Id": "C:\\Users\\Asus\\Desktop\\c#Code\\BookingApp-Internship\\Booking-Car-App\\wwwroot\\img\\actions-star.svg",

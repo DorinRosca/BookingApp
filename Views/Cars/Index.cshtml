@@ -3,91 +3,37 @@
 }
 
 @using CarBookingApp.ViewModels
-@model IEnumerable<CarBookingApp.ViewModels.CarViewModel>
+@model CarBookingApp.ViewModels.CarFilterViewModel
 <div class="main">
      <!-- sidebar -->
      <aside class="aside offcanvas-xl offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebar-check" aria-labelledby="sidebar-check">
-          <div class="offcanvas-header">
-               <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Choose something here</h5>
-               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#sidebar-check"></button>
-          </div>
           <div class="offcanvas-body d-block">
                <div class="aside__wrap">
-                    <h3 class="aside__title">
-                         type
-                    </h3>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-sport" checked>
-                         <label class="form-check-label px-1" for="checkbox-sport">
-                              Sport <span class="check__span">(10)</span>
-                         </label>
-                    </div>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-suv" checked>
-                         <label class="form-check-label px-1" for="checkbox-suv">
-                              SUV <span class="check__span">(12)</span>
-                         </label>
-                    </div>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-mpv">
-                         <label class="form-check-label  px-1" for="checkbox-mpv">
-                              MPV <span class="check__span">(16)</span>
-                         </label>
-                    </div>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-sedan">
-                         <label class="form-check-label px-1" for="checkbox-sedan">
-                              Sedan <span class="check__span">(20)</span>
-                         </label>
-                    </div>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-coupe">
-                         <label class="form-check-label px-1" for="checkbox-coupe">
-                              Coupe <span class="check__span">(14)</span>
-                         </label>
-                    </div>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-hatchback">
-                         <label class="form-check-label px-1" for="checkbox-hatchback">
-                              Hatchback <span class="check__span">(14)</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="aside__wrap">
-                    <h3 class="aside__title">
-                         capacity
-                    </h3>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-two-person" checked>
-                         <label class="form-check-label px-1" for="checkbox-two-person">
-                              2 Person <span class="check__span">(10)</span>
-                         </label>
-                    </div>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-four-person">
-                         <label class="form-check-label px-1" for="checkbox-four-person">
-                              4 Person <span class="check__span">(14)</span>
-                         </label>
-                    </div>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-six-person">
-                         <label class="form-check-label px-1" for="checkbox-six-person">
-                              6 Person <span class="check__span">(12)</span>
-                         </label>
-                    </div>
-                    <div class="aside__check">
-                         <input class="form-check-input" type="checkbox" id="checkbox-eight-person" checked>
-                         <label class="form-check-label px-1" for="checkbox-eight-person">
-                              8 or More <span class="check__span">(16)</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="aside__wrap">
-                    <h3 class="aside__title">
-                         price
-                    </h3>
-                    <input type="range" id="price-range" value="100" min="0" max="130">
-                    <label for="price-range" class="form-label aside__check">Max. <span id="price-range-sum">$100.00</span></label>
+                    <form method="post" action="@Url.Action("Index")">
+                         <h3 class="aside__title">Brand:</h3>
+                         @foreach (var brand in Model.Brands)
+                         {
+                              <div class="aside__check">
+                                   <input class="form-check-input" type="radio" id="checkbox-brand-@brand.BrandId" name="SelectedBrandId" value="@brand.BrandId" @(Model.SelectedBrandId == brand.BrandId ? "checked" : "")>
+                                   <label class="form-check-label px-1" for="checkbox-brand-@brand.BrandId">
+                                        @brand.BrandName 
+                                   </label>
+                              </div>
+                         }
+
+                         <h3 class="aside__title">Vehicle:</h3>                         
+                         @foreach (var vehicle in Model.Vehicles)
+                         {
+                              <div class="aside__check">
+                                   <input class="form-check-input" type="radio" id="checkbox-vehicle-@vehicle.VehicleId" name="SelectedVehicleId" value="@vehicle.VehicleId" @(Model.SelectedVehicleId == vehicle.VehicleId ? "checked" : "")>
+                                   <label class="form-check-label px-1" for="checkbox-vehicle-@vehicle.VehicleId">
+                                        @vehicle.VehicleName
+                                   </label>
+                              </div>                              
+                         }
+
+                         <button type="submit" class="btn btn-primary">Apply</button>
+                    </form>
                </div>
           </div>
      </aside>
@@ -97,15 +43,9 @@
 
                <!-- catalogue recent car -->
                <section class="content__catalogue">
-                    <div class="content__catalogue-header">
-                         <h4 class="content__catalogue-title">
-                              Recent Car
-                         </h4>
-                         <button class="content__catalogue-main-btn">View All</button>
-                    </div>
                     <div class="content__catalogue-item-wrap-primary">
                          <div class="content__catalogue-item-wrap-secondary">
-                              @foreach (var car in Model)
+                              @foreach (var car in Model.Cars)
                               {
                                    <!-- catalogue recent car 1 -->
                                    <div class="content__catalogue-item">
@@ -126,7 +66,7 @@
                                                   var imageBase64 = Convert.ToBase64String(car.Image);
                                                   var imageSrc = string.Format("data:image;base64,{0}", imageBase64);
 
-                                                  <img src="@imageSrc" alt="Car Image" />
+                                                  <img src="@imageSrc" alt="Car Image" style="width: 400px; height: 200px;" />
                                              }
                                              else
                                              {
