@@ -12,9 +12,6 @@ namespace Car_Booking_App.Entities
           [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
           public int OrderId { get; set; }
 
-          [Required, ForeignKey("Customer")]
-          public int CustomerId { get; set; }
-
           [Required]
           [ForeignKey(nameof(User))]
           public string UserId { get; set; }

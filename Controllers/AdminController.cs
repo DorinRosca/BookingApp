@@ -1,9 +1,12 @@
 ﻿using CarBookingApp.Interfaces;
 using CarBookingApp.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarBookingApp.Controllers
 {
+     [Authorize(Policy = "Admin")]
      public class AdminController : Controller
      {
           private readonly IAdmin _admin;
@@ -28,37 +31,52 @@ namespace CarBookingApp.Controllers
           [ValidateAntiForgeryToken]
           public ActionResult CreateDrive(DriveViewModel model)
           {
-               var result = _admin.AddDrive(model).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+
+                    var result = _admin.AddDrive(model).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
+
           }
 
           [HttpPost]
           [ValidateAntiForgeryToken]
           public ActionResult DeleteDrive(byte id)
           {
-               var result = _admin.DeleteDrive(id).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.DeleteDrive(id).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
                return RedirectToAction("Error", "Home");
+
           }
 
           public ActionResult EditDrive(byte id)
           {
-               DriveViewModel model = _admin.GetDrive(id).Result;
-               if (model == null)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Error", "Home");
-               }
 
-               return View(model);
+                    DriveViewModel model = _admin.GetDrive(id).Result;
+                    if (model == null)
+                    {
+                         return RedirectToAction("Error", "Home");
+                    }
+
+                    return View(model);
+               }
+               return RedirectToAction("Error", "Home");
+
           }
 
           [HttpPost]
@@ -76,7 +94,7 @@ namespace CarBookingApp.Controllers
                     return RedirectToAction("Success", "Home");
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
 
@@ -95,37 +113,47 @@ namespace CarBookingApp.Controllers
           [ValidateAntiForgeryToken]
           public ActionResult CreateBrand(BrandViewModel model)
           {
-               var result = _admin.AddBrand(model).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.AddBrand(model).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
           [HttpPost]
           [ValidateAntiForgeryToken]
           public ActionResult DeleteBrand(byte id)
           {
-               var result = _admin.DeleteBrand(id).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.DeleteBrand(id).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
-
                return RedirectToAction("Error", "Home");
           }
 
           public ActionResult EditBrand(byte id)
           {
-               BrandViewModel model = _admin.GetBrand(id).Result;
-               if (model == null)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Error", "Home");
-               }
+                    BrandViewModel model = _admin.GetBrand(id).Result;
+                    if (model == null)
+                    {
+                         return RedirectToAction("Error", "Home");
+                    }
 
-               return View(model);
+                    return View(model);
+               }
+               return RedirectToAction("Error", "Home");
+
           }
 
           [HttpPost]
@@ -143,7 +171,7 @@ namespace CarBookingApp.Controllers
                     return RedirectToAction("Success", "Home");
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
           public ActionResult FuelTypes()
@@ -161,23 +189,29 @@ namespace CarBookingApp.Controllers
           [ValidateAntiForgeryToken]
           public ActionResult CreateFuelType(FuelTypeViewModel model)
           {
-               var result = _admin.AddFuelType(model).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.AddFuelType(model).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
           [HttpPost]
           [ValidateAntiForgeryToken]
           public ActionResult DeleteFuelType(byte id)
           {
-               var result = _admin.DeleteFuelType(id).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.DeleteFuelType(id).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
                return RedirectToAction("Error", "Home");
@@ -185,13 +219,18 @@ namespace CarBookingApp.Controllers
 
           public ActionResult EditFuelType(byte id)
           {
-               FuelTypeViewModel model = _admin.GetFuelType(id).Result;
-               if (model == null)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Error", "Home");
-               }
+                    FuelTypeViewModel model = _admin.GetFuelType(id).Result;
+                    if (model == null)
+                    {
+                         return RedirectToAction("Error", "Home");
+                    }
 
-               return View(model);
+                    return View(model);
+               }
+               return RedirectToAction("Error", "Home");
+
           }
 
           [HttpPost]
@@ -209,7 +248,7 @@ namespace CarBookingApp.Controllers
                     return RedirectToAction("Success", "Home");
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
           public ActionResult Transmissions()
@@ -227,23 +266,29 @@ namespace CarBookingApp.Controllers
           [ValidateAntiForgeryToken]
           public ActionResult CreateTransmission(TransmissionViewModel model)
           {
-               var result = _admin.AddTransmission(model).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.AddTransmission(model).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
           [HttpPost]
           [ValidateAntiForgeryToken]
           public ActionResult DeleteTransmission(byte id)
           {
-               var result = _admin.DeleteTransmission(id).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.DeleteTransmission(id).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
                return RedirectToAction("Error", "Home");
@@ -251,15 +296,18 @@ namespace CarBookingApp.Controllers
 
           public ActionResult EditTransmission(byte id)
           {
-               TransmissionViewModel model = _admin.GetTransmission(id).Result;
-               if (model == null)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Error", "Home");
+                    TransmissionViewModel model = _admin.GetTransmission(id).Result;
+                    if (model == null)
+                    {
+                         return RedirectToAction("Error", "Home");
+                    }
+
+                    return View(model);
                }
-
-               return View(model);
+               return RedirectToAction("Error", "Home");
           }
-
           [HttpPost]
           [ValidateAntiForgeryToken]
           public async Task<IActionResult> EditTransmission(TransmissionViewModel model)
@@ -275,7 +323,7 @@ namespace CarBookingApp.Controllers
                     return RedirectToAction("Success", "Home");
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
           public ActionResult Vehicles()
@@ -293,37 +341,46 @@ namespace CarBookingApp.Controllers
           [ValidateAntiForgeryToken]
           public ActionResult CreateVehicle(VehicleViewModel model)
           {
-               var result = _admin.AddVehicle(model).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.AddVehicle(model).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
-
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
           [HttpPost]
           [ValidateAntiForgeryToken]
           public ActionResult DeleteVehicle(byte id)
           {
-               var result = _admin.DeleteVehicle(id).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.DeleteVehicle(id).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
-
                return RedirectToAction("Error", "Home");
           }
 
           public ActionResult EditVehicle(byte id)
           {
-               VehicleViewModel model = _admin.GetVehicle(id).Result;
-               if (model == null)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Error", "Home");
-               }
+                    VehicleViewModel model = _admin.GetVehicle(id).Result;
+                    if (model == null)
+                    {
+                         return RedirectToAction("Error", "Home");
+                    }
 
-               return View(model);
+                    return View(model);
+               }
+               return RedirectToAction("Error", "Home");
+
           }
 
           [HttpPost]
@@ -341,7 +398,7 @@ namespace CarBookingApp.Controllers
                     return RedirectToAction("Success", "Home");
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
           public ActionResult Status()
           {
@@ -358,23 +415,29 @@ namespace CarBookingApp.Controllers
           [ValidateAntiForgeryToken]
           public ActionResult CreateStatus(StatusViewModel model)
           {
-               var result = _admin.AddStatus(model).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.AddStatus(model).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
           [HttpPost]
           [ValidateAntiForgeryToken]
           public ActionResult DeleteStatus(byte id)
           {
-               var result = _admin.DeleteStatus(id).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _admin.DeleteStatus(id).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
                return RedirectToAction("Error", "Home");
@@ -382,13 +445,18 @@ namespace CarBookingApp.Controllers
 
           public ActionResult EditStatus(byte id)
           {
-               StatusViewModel model = _admin.GetStatus(id).Result;
-               if (model == null)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Error", "Home");
-               }
+                    StatusViewModel model = _admin.GetStatus(id).Result;
+                    if (model == null)
+                    {
+                         return RedirectToAction("Error", "Home");
+                    }
 
-               return View(model);
+                    return View(model);
+               }
+               return RedirectToAction("Error", "Home");
+
           }
 
           [HttpPost]
@@ -406,7 +474,7 @@ namespace CarBookingApp.Controllers
                     return RedirectToAction("Success", "Home");
                }
 
-               return RedirectToAction("Error", "Home");
+               return View(model);
           }
 
      }

@@ -46,8 +46,6 @@ namespace Car_Booking_App.Entities
 
           [Required, Range(0, Double.MaxValue), Column(TypeName = "decimal(8,2)")]
           public decimal PricePerDay { get; set; }
-          
-          [Required, Column(TypeName = "bit")] public bool Availability { get; set; }
 
           [Column(TypeName = "varbinary(max)")]
           public byte[] Image { get; set; }

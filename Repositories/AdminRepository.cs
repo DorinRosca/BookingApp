@@ -13,24 +13,26 @@ namespace CarBookingApp.Repositories
           private readonly IMapper _mapper;
           public AdminRepository(DataContext context,IMapper mapper)
           {
-               _context = context;
-               _mapper = mapper;
+               this._context = context;
+               this._mapper = mapper;
           }
 
-          public async Task<IEnumerable<TViewModel>> GetAllData<T, TViewModel>() where T : class where TViewModel: class
+          public async Task<IEnumerable<TViewModel>> GetAllData<T, TViewModel>() 
+               where T : class 
+               where TViewModel: class
           {
-               var list = await _context.Set<T>().ToListAsync();
-               var result = list.Select(entity => _mapper.Map<TViewModel>(entity));
+               var dataList = await _context.Set<T>().ToListAsync();
+               var result = dataList.Select(entity => _mapper.Map<TViewModel>(entity));
                return result;
           }
-          public async Task<bool> AddData<T, TViewModel>(TViewModel model) where T : class
+          public async Task<bool> AddData<T, TViewModel>(TViewModel model) 
+               where T : class
                where TViewModel : class
           {
-               if (model is null)
+               if (model == null)
                {
-                    return false;
+                    throw new ArgumentNullException(nameof(model), "The model cannot be null.");
                }
-
                var entity = _mapper.Map<TViewModel, T>(model);
                _context.Set<T>().Add(entity);
                var result = await _context.SaveChangesAsync();
@@ -41,34 +43,37 @@ namespace CarBookingApp.Repositories
                where T : class
                where TViewModel : class
           {
-               if (model is null)
+               if (model == null)
                {
-                    return false;
+                    throw new ArgumentNullException(nameof(model), "The model parameter cannot be null.");
                }
 
                var entity = _mapper.Map<TViewModel, T>(model);
                _context.Entry(entity).State = EntityState.Modified;
+
                var result = await _context.SaveChangesAsync();
                return result > 0;
           }
 
 
-          public async Task<bool> DeleteData<T>(byte id) where T : class
+          public async Task<bool> DeleteData<T>(byte id) 
+               where T : class
           {
                if (id == 0)
                {
-                    return false;
+                    throw new ArgumentNullException( nameof(id),"The Id parameter cannot be zero.");
                }
 
                var entity = await _context.Set<T>().FindAsync(id);
                if (entity == null)
                {
-                    return false;
+                    throw new ArgumentNullException(nameof(id),"There is no entity with such Id.");
+
                }
 
                _context.Set<T>().Remove(entity);
+               
                var result = await _context.SaveChangesAsync();
-
                return result > 0;
           }
           public async Task<TViewModel> GetData<T, TViewModel>(byte id)
@@ -77,20 +82,22 @@ namespace CarBookingApp.Repositories
           {
                if (id == 0)
                {
-                    return null;
+                    throw new ArgumentNullException(nameof(id), "The Id parameter cannot be zero.");
+
                }
 
                var entity = await _context.Set<T>().FindAsync(id);
                if (entity == null)
                {
-                    return null;
+                    throw new ArgumentNullException(nameof(id), "There is no entity with such Id.");
+
                }
 
                var model = _mapper.Map<TViewModel>(entity);
-
                return model;
           }
-
+          
+          //Drive Logic
           public Task<IEnumerable<DriveViewModel>> GetAllDrive()
           {
                return GetAllData<Drive, DriveViewModel>();
@@ -115,7 +122,7 @@ namespace CarBookingApp.Repositories
           {
                return GetData<Drive, DriveViewModel>(id);
           }
-
+          //Vehicle Logic
           public Task<IEnumerable<VehicleViewModel>> GetAllVehicle()
           {
                return GetAllData<Vehicle, VehicleViewModel>();
@@ -141,6 +148,7 @@ namespace CarBookingApp.Repositories
                return GetData<Vehicle, VehicleViewModel>(id);
           }
 
+          //FuelType Logic
           public Task<IEnumerable<FuelTypeViewModel>> GetAllFuelType()
           {
                return GetAllData<FuelType, FuelTypeViewModel>();
@@ -165,7 +173,7 @@ namespace CarBookingApp.Repositories
           {
                return GetData<FuelType, FuelTypeViewModel>(id);
           }
-
+          //Brand Logic
           public Task<IEnumerable<BrandViewModel>> GetAllBrand()
           {
                return GetAllData<Brand, BrandViewModel>();
@@ -191,6 +199,7 @@ namespace CarBookingApp.Repositories
                return GetData<Brand, BrandViewModel>(id);
           }
 
+          //Transmission Logic
           public Task<IEnumerable<TransmissionViewModel>> GetAllTransmission()
           {
                return GetAllData<Transmission, TransmissionViewModel>();
@@ -215,7 +224,7 @@ namespace CarBookingApp.Repositories
           {
                return GetData<Transmission, TransmissionViewModel>(id);
           }
-
+          //Status Logic
           public Task<IEnumerable<StatusViewModel>> GetAllStatus()
           {
                return GetAllData<Status, StatusViewModel>();

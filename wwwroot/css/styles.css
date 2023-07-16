@@ -217,3 +217,28 @@ body {
 
 
 
+.content__catalogue {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.content__catalogue-item {
+     width: calc(50% - 10px); /* Adjust the width as needed */
+     margin-bottom: 20px;
+     /* Other styles for the item */
+}
+.responsive-div {
+     width: 100%; /* Set the initial width to 100% */
+     max-width: 800px; /* Set a maximum width for the div */
+     margin: 0 auto; /* Center the div horizontally */
+     background-color: #f2f2f2;
+     padding: 20px;
+     box-sizing: border-box;
+}
+@media (max-width: 768px) {
+     .content__catalogue-item {
+          width: 100%; /* On smaller screens, show one car per row */
+     }
+}
+

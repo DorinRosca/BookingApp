@@ -12,6 +12,11 @@ builder.Services.AddScoped<IOrder, OrderRepository>();
 builder.Services.AddScoped<IRole, RoleRepository>();
 builder.Services.AddScoped<IUser, UserRepository>();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
+builder.Services.AddAuthorization(options =>
+{
+     options.AddPolicy("Admin",
+          policy => policy.RequireRole("Admin"));
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataContext>(options =>
@@ -39,7 +44,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
      name: "default",
-     pattern: "{controller=Home}/{action=Index}/{id?}"
+     pattern: "{controller=Cars}/{action=Index}/{id?}"
 );
 
 

@@ -1,17 +1,21 @@
-﻿<form action="/your-action-url" method="post" name="create-order">
-     <h2>ORDER</h2>
+﻿<h2>ORDER</h2>
+@model CarBookingApp.ViewModels.OrderViewModel
+
+<form method="post" action="@Url.Action("Create", "Order")">
+     <input type="hidden" name="carId" value="@Model.CarId" />
 
      <div class="container">
           <div class="detail__spesification-type">Choose Rental Start Date</div>
-          <input id="startDatePicker" name="start-date" type="text" class="form-control m-datepicker" placeholder="Choose First Date">
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.RentalStartDate)</span>
+          <input id="RentalStartDate" name="RentalStartDate" type="text" class="form-control m-datepicker" placeholder="Choose First Date">
      </div>
 
      <div class="container">
           <div class="detail__spesification-type">Choose Rental End Date</div>
-          <input id="endDatePicker" name="end-date" type="text" class="form-control m-datepicker" placeholder="Choose Second Date">
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.RentalEndDate)</span>
+          <input id="RentalEndDate" name="RentalEndDate" type="text" class="form-control m-datepicker" placeholder="Choose Second Date">
      </div>
-
-     <form method="get" action="@Url.Action("Create","Order",new {id = Model.CarId})">
+     <br>
           <button type="submit" class="btn btn-primary content__button">Submit</button>
-     </form>
+     </br>
 </form>

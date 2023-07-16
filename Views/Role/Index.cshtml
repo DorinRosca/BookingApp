@@ -11,9 +11,10 @@
                               <h2>Roles <b>Details</b></h2>
                          </div>
                          <div class="col-sm-4">
-                              <a href="@Url.Action("Create")" class="btn btn-info add-new">
-                                   <i class="fa fa-plus"></i> Add New
-                              </a>
+                              <form method="get" action="@Url.Action("Create")">
+                                   @Html.AntiForgeryToken()
+                                   <button type="submit" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New Role</button>
+                              </form>
                          </div>
                     </div>
                </div>
@@ -31,12 +32,14 @@
                                              <td>@roles.Name</td>
                                              <td>
                                                   <div class="d-flex align-items-center">
-                                                       <button class="edit mr-2" title="Edit" data-toggle="tooltip"
-                                                onclick="location.href='/Roles/Edit/@roles.RoleId'">
-                                                            <i class="material-icons">&#xE254;</i>
-                                                       </button>
-                                                       <form method="post" action="@Url.Action("Delete", new { id = roles.RoleId })" style="display: inline;">
-                                                  @Html.AntiForgeryToken()
+                                                       <form method="get" action="@Url.Action("Edit", new { id = roles.Id })" style="display: inline;">
+                                                            @Html.AntiForgeryToken()
+                                                  <button class="edit mr-2" type="submit" title="Edit" data-toggle="tooltip">
+                                                       <i class="material-icons">&#xE254;</i>
+                                                            </button>
+                                                       </form>
+                                                       <form method="post" action="@Url.Action("Delete", new { id = roles.Id })" style="display: inline;">
+                                                            @Html.AntiForgeryToken()
                                                             <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
                                                                  <i class="material-icons">&#xE872;</i>
                                                             </button>

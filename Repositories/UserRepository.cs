@@ -27,6 +27,12 @@ namespace CarBookingApp.Repositories
           }
           public async Task<IdentityResult> Register(RegisterViewModel model)
           {
+               if (model == null)
+               {
+                    throw new ArgumentNullException(nameof(model), "There is no such model");
+
+               }
+
                var user = new IdentityUser
                {
                     UserName = model.Email,
@@ -40,7 +46,6 @@ namespace CarBookingApp.Repositories
 
                }
                return result;
-
           }
 
           public async Task<SignInResult> Login(LoginViewModel user)
@@ -58,21 +63,29 @@ namespace CarBookingApp.Repositories
           public async Task<string> GetUserId(string name)
           {
                var result = await _userManager.FindByNameAsync(name);
+               if (result == null)
+               {
+                    throw new NullReferenceException(nameof(result));
+               }
                return result.Id;
           }
           public async Task<string> GetRoleId(string name)
           {
                var result = await _roleManager.FindByNameAsync(name);
-               if (result != null)
+               if (result == null)
                {
-                    return result.Id;
-
+                    throw new NullReferenceException(nameof(result));
                }
-               return null;
+               return result.Id;
           }
 
           public async Task<bool> SetRole(UserRoleViewModel model)
           {
+               if (model == null)
+               {
+                    throw new ArgumentNullException(nameof(model), "There is no such model");
+
+               }
                var roleId =  GetRoleId(model.RoleName).Result;
                var userId = GetUserId(model.UserName).Result;
                if (roleId != null && userId != null)
@@ -86,6 +99,11 @@ namespace CarBookingApp.Repositories
 
           public async Task<bool> DeleteRole(UserRoleViewModel model)
           {
+               if (model == null)
+               {
+                    throw new ArgumentNullException(nameof(model), "There is no such model");
+
+               }
                var roleId = GetRoleId(model.RoleName).Result;
                var userId = GetUserId(model.UserName).Result;
                if (roleId != null && userId != null)
@@ -105,19 +123,34 @@ namespace CarBookingApp.Repositories
                foreach (var user in users)
                {
                     var roles = await _userManager.GetRolesAsync(user);
-                    var role = roles.FirstOrDefault();
 
-                    var viewModel = new UserRoleViewModel
+                    if (roles.Count == 0)
                     {
-                         UserName = user.UserName,
-                         RoleName = role
-                    };
+                         var viewModel = new UserRoleViewModel
+                         {
+                              UserName = user.UserName,
+                         };
 
-                    viewModels.Add(viewModel);
+                         viewModels.Add(viewModel);
+                    }
+                    else
+                    {
+                         foreach (var role in roles)
+                         {
+                              var viewModel = new UserRoleViewModel
+                              {
+                                   UserName = user.UserName,
+                                   RoleName = role
+                              };
+
+                              viewModels.Add(viewModel);
+                         }
+                    }
                }
 
                return viewModels;
           }
+
 
 
 

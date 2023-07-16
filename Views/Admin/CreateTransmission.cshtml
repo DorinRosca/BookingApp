@@ -10,6 +10,8 @@
 
      <div class="form-group">
           <label for="TransmissionName">Transmission Name</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.TransmissionName)</span>
+
           <input type="text" class="form-control" id="TransmissionName" name="TransmissionName">
      </div>
 

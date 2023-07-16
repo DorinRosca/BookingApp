@@ -6,6 +6,7 @@ namespace CarBookingApp.ViewModels
 {
      public class TransmissionViewModel
      {
+
           public byte TransmissionId { get; set; }
 
           [Required, StringLength(50)]

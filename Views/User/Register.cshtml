@@ -16,19 +16,21 @@
                          <h5 class="card-title text-center mb-5 fw-light fs-5">Register</h5>
                          <form method="post">
                               <div asp-validation-summary="All" class="text-danger"></div>
-                              <div class="form-floating mb-3">
                                    <label asp-for="Email"></label>
+
+                              <div class="form-floating mb-3">
                                    <input asp-for="Email" class="form-control" />
                                    <span asp-validation-for="Email" class="text-danger"></span>
                               </div>
+                              <label asp-for="Password"></label>
 
                               <div class="form-floating mb-3">
-                                   <label asp-for="Password"></label>
                                    <input asp-for="Password" class="form-control" />
                                    <span asp-validation-for="Password" class="text-danger"></span>
                               </div>
+                              <label asp-for="ConfirmPassword"></label>
+
                               <div class="form-floating mb-3">
-                                   <label asp-for="ConfirmPassword"></label>
                                    <input asp-for="ConfirmPassword" class="form-control" />
                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                               </div>

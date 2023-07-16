@@ -10,8 +10,12 @@
      <div class="form-group">
           <label for="VehicleName">Vehicle Name</label>
           <input type="hidden" class="form-control" id="VehicleId" name="VehicleId" value="@Model.VehicleId">
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.VehicleName)</span>
+
           <input type="text" class="form-control" id="VehicleName" name="VehicleName" value="@Model.VehicleName">
           <label for="SeatsNumber">Number of Seats</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.SeatsNumber)</span>
+
           <input type="text" class="form-control" id="SeatsNumber" name="SeatsNumber" value="@Model.SeatsNumber">
      </div>
 

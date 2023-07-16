@@ -14,8 +14,8 @@ namespace CarBookingApp.Interfaces
           public Task<bool> SetRole(UserRoleViewModel model);
           public Task<bool> DeleteRole(UserRoleViewModel model);
 
-          public  Task<string> GetUserId(string name);
-          public  Task<string> GetRoleId(string name);
+          //public  Task<string> GetUserId(string name);
+          //public  Task<string> GetRoleId(string name);
 
           public Task<List<UserRoleViewModel>> GetAllUserRoles();
 

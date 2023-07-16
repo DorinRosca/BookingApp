@@ -1,5 +1,6 @@
 ﻿using CarBookingApp.Interfaces;
 using CarBookingApp.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -72,7 +73,7 @@ namespace CarBookingApp.Controllers
 
                return RedirectToAction("Login");
           }
-
+          [Authorize(Policy = "Admin")]
           public IActionResult Index()
           {
                var userRole = _user.GetAllUserRoles().Result;
@@ -82,27 +83,33 @@ namespace CarBookingApp.Controllers
           {
                return View();
           }
-
+          [Authorize(Policy = "Admin")]
           [HttpPost]
           public IActionResult AddRole(UserRoleViewModel model)
           {
-               var result = _user.SetRole(model).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _user.SetRole(model).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
+
                }
-
-               return RedirectToAction("Error", "Home");
-
+               return View(model);
           }
 
+          [Authorize(Policy = "Admin")]
           [HttpPost]
           public IActionResult DeleteRole(UserRoleViewModel model)
           {
-               var result = _user.DeleteRole(model).Result;
-               if (result)
+               if (ModelState.IsValid)
                {
-                    return RedirectToAction("Success", "Home");
+                    var result = _user.DeleteRole(model).Result;
+                    if (result)
+                    {
+                         return RedirectToAction("Success", "Home");
+                    }
                }
 
                return RedirectToAction("Error", "Home");

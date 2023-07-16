@@ -7,7 +7,7 @@ namespace CarBookingApp.Interfaces
 {
      public interface IAdmin
      {
-          public Task<IEnumerable<TViewModel>> GetAllData<T, TViewModel>()
+          /*public Task<IEnumerable<TViewModel>> GetAllData<T, TViewModel>()
                where T : class where TViewModel : class;
 
           public Task<bool> AddData<T, TViewModel>(TViewModel model) where T : class where TViewModel : class;
@@ -17,7 +17,7 @@ namespace CarBookingApp.Interfaces
 
           public Task<bool> DeleteData<T>(byte id) where T : class;
           public Task<TViewModel> GetData<T, TViewModel>(byte id) where T : class
-               where TViewModel : class;
+               where TViewModel : class;*/
 
           public Task<IEnumerable<DriveViewModel>> GetAllDrive();
 

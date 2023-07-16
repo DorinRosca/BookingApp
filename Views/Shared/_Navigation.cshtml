@@ -44,8 +44,9 @@
                                        </svg>
                                   </button>
                                   </form>
-
-                                  <div class="dropdown">
+                                  @if (User.IsInRole("Admin"))
+                                  { 
+                                       <div class="dropdown">
                                        <button class="header__user-settings-btn">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                  <path d="M20.1 9.22043C18.29 9.22043 17.55 7.94042 18.45 6.37042C18.97 5.46042 18.66 4.30042 17.75 3.78042L16.02 2.79042C15.23 2.32042 14.21 2.60042 13.74 3.39042L13.63 3.58042C12.73 5.15042 11.25 5.15042 10.34 3.58042L10.23 3.39042C9.78 2.60042 8.76 2.32042 7.97 2.79042L6.24 3.78042C5.33 4.30042 5.02 5.47042 5.54 6.38042C6.45 7.94042 5.71 9.22043 3.9 9.22043C2.86 9.22043 2 10.0704 2 11.1204V12.8804C2 13.9204 2.85 14.7804 3.9 14.7804C5.71 14.7804 6.45 16.0604 5.54 17.6304C5.02 18.5404 5.33 19.7004 6.24 20.2204L7.97 21.2104C8.76 21.6804 9.78 21.4004 10.25 20.6104L10.36 20.4204C11.26 18.8504 12.74 18.8504 13.65 20.4204L13.76 20.6104C14.23 21.4004 15.25 21.6804 16.04 21.2104L17.77 20.2204C18.68 19.7004 18.99 18.5304 18.47 17.6304C17.56 16.0604 18.3 14.7804 20.11 14.7804C21.15 14.7804 22.01 13.9304 22.01 12.8804V11.1204C22 10.0804 21.15 9.22043 20.1 9.22043ZM12 15.2504C10.21 15.2504 8.75 13.7904 8.75 12.0004C8.75 10.2104 10.21 8.75042 12 8.75042C13.79 8.75042 15.25 10.2104 15.25 12.0004C15.25 13.7904 13.79 15.2504 12 15.2504Z" fill="#3D5278"/>
@@ -62,6 +63,8 @@
                                             <a href="@Url.Action("Index", "User")">Users</a>
                                        </div>
                                   </div>
+                                  }
+                                 
                              </div>
                         </div>
                     </div>
@@ -69,54 +72,58 @@
                 <div class="header__secondary-wrap">
                     <!-- header logo -->
                     <div class="header__logo-wrap">
-                        <a href="index.html" class="header__logo">
+                        <a  class="header__logo">
                             Rental
                         </a>
                     </div>
-                    <!-- header input -->
-                    <div class="input-group">
-                        <span class="input-group-text bg-white header__input-icon border-end-0">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#3D5278" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M22 22L20 20" stroke="#3D5278" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                            
-                        </span>
-                        <input type="search" class="form-control header__input" placeholder="Search something here" aria-label="Search something here" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-primary header__input-button" type="button" id="button-addon2" data-bs-toggle="offcanvas" data-bs-target="#sidebar-check" aria-controls="sidebar-check">
-                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path class="header__input-button-icon" d="M22 6.5H16" stroke="#3D5278" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path class="header__input-button-icon" d="M6 6.5H2" stroke="#3D5278" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path class="header__input-button-icon" d="M10 10C11.933 10 13.5 8.433 13.5 6.5C13.5 4.567 11.933 3 10 3C8.067 3 6.5 4.567 6.5 6.5C6.5 8.433 8.067 10 10 10Z" stroke="#3D5278" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path class="header__input-button-icon" d="M22 17.5H18" stroke="#3D5278" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path class="header__input-button-icon" d="M8 17.5H2" stroke="#3D5278" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path class="header__input-button-icon" d="M14 21C15.933 21 17.5 19.433 17.5 17.5C17.5 15.567 15.933 14 14 14C12.067 14 10.5 15.567 10.5 17.5C10.5 19.433 12.067 21 14 21Z" stroke="#3D5278" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                             </svg>
-                        </button>
-                        </div>
+
                         @if (User.Identity.IsAuthenticated)
                         {
-                             <ul class="navbar-nav flex-grow-1">
                                   <li class="nav-item">
-                                       <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                       <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 20px;">Home</a>
                                   </li>
                                   <li class="nav-item">
-                                       <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                                       <!-- Add your nav item content here -->
                                   </li>
                                   <li class="nav-item">
-                                       <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout">Logout</a>
+                                       <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout" style="font-size: 20px;">Logout</a>
                                   </li>
-                             </ul>
+                                   <li class="nav-item">
+                                  <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="List" style="font-size: 20px;">Orders</a>
+                                   </li>
                         }
                         else
                         {
-                                  <li class="nav-item">
-                                       <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Login">Login</a>
-                                  </li>
-                                  <li class="nav-item">
-                                       <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Register">Register</a>
-                                  </li>
+                             <li class="nav-item">
+                                  <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Login" style="font-size: 20px;">Login</a>
+                             </li>
+                             <li class="nav-item">
+                                  <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Register" style="font-size: 20px;">Register</a>
+                             </li>
+
                         }
-                   
-                </div>
+
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Cars" asp-action="Index" style="font-size: 20px;">Cars</a>
+               </li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                         <div class="dropdown">
+                              <li class="nav-item">
+                                   <a class="nav-link text-dark" as style="font-size: 20px;">Settings</a>
+                              </li>
+                              <div class="dropdown-content">
+                                   <a href="@Url.Action("Drives", "Admin")">Drives</a>
+                                   <a href="@Url.Action("Brands", "Admin")">Brands</a>
+                                   <a href="@Url.Action("FuelTypes", "Admin")">FuelTypes</a>
+                                   <a href="@Url.Action("Transmissions", "Admin")">Transmissions</a>
+                                   <a href="@Url.Action("Vehicles", "Admin")">Vehicles</a>
+                                   <a href="@Url.Action("Status", "Admin")">Status</a>
+                                   <a href="@Url.Action("Index", "Role")">Roles</a>
+                                   <a href="@Url.Action("Index", "User")">Users</a>
+                              </div>
+                         </div>
+                    }
+          </div>
             </div>
  </header>

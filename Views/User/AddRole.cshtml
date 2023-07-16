@@ -4,17 +4,20 @@
 
 @using CarBookingApp.ViewModels
 @model UserRoleViewModel
-
+<div class="catalogue-item-specification__element-wrap text-center">
+     <h2 class="text-primary display-4 fw-bold">Add User-Role Relation:</h2>
+</div>
 <form method="post" action="@Url.Action("AddRole", "User")">
      @Html.AntiForgeryToken()
 
      <div class="form-group">
-          <label for="UserName">User Name</label>
+          <label asp-for="UserName">UserName:</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.UserName)</span>
           <input type="text" class="form-control" id="UserName" name="UserName">
-          <label for="RoleName">RoleName</label>
+
+          <label asp-for="RoleName">RoleName:</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.RoleName)</span>
           <input type="text" class="form-control" id="RoleName" name="RoleName">
-
      </div>
-
-     <button type="submit" class="btn btn-primary">Create</button>
+     <button type="submit" class="btn btn-primary">Create Relation</button>
 </form>

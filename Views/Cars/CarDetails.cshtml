@@ -98,9 +98,19 @@
                               </span>
                                
                          </div>
-                         <form method="get" action="@Url.Action("Create","Order",new {id = Model.CarId})">
+                         @if (User.Identity.IsAuthenticated)
+                         {<form method="get" action="@Url.Action("Create", "Order")">
+                              <input type="hidden" name="carId" value="@Model.CarId"/>
                               <button type="submit" class="btn btn-primary content__button">Rent Now</button>
                          </form>
+                         }
+                         else
+                         {
+                              <form method="get" action="@Url.Action("Login", "User")">
+                              <input type="hidden" name="carId" value="@Model.CarId"/>
+                              <button type="submit" class="btn btn-primary content__button">Rent Now</button>
+                         </form>
+                         }
                     </div>
                </section>
 

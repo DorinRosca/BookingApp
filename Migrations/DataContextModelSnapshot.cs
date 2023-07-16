@@ -48,9 +48,6 @@ namespace CarBookingApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CarId"));
 
-                    b.Property<bool>("Availability")
-                        .HasColumnType("bit");
-
                     b.Property<byte>("BrandId")
                         .HasColumnType("tinyint");
 
@@ -141,9 +138,6 @@ namespace CarBookingApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
 
                     b.Property<int>("CarId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("RentalEndDate")

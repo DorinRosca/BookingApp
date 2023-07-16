@@ -11,9 +11,10 @@
                         <h2>Users <b>Details</b></h2>
                     </div>
                     <div class="col-sm-4">
-                        <a href="@Url.Action("AddRole")" class="btn btn-info add-new">
-                            <i class="fa fa-plus"></i> Add New
-                        </a>
+                         <form method="get" action="@Url.Action("AddRole")">
+                              @Html.AntiForgeryToken()
+                                   <button type="submit" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New Role</button>
+                         </form>
                     </div>
                 </div>
             </div>
@@ -38,7 +39,6 @@
                                                    <form method="post" action="@Url.Action("DeleteRole")" style="display: inline;">
                                                         <input type="hidden" class="form-control" id="RoleName" name="RoleName" value="@userRole.RoleName">
                                                         <input type="hidden" class="form-control" id="UserName" name="UserName" value="@userRole.UserName">
-
                                                         @Html.AntiForgeryToken()
                                                         <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
                                                              <i class="material-icons">&#xE872;</i>

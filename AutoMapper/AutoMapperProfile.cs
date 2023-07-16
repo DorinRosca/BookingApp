@@ -39,6 +39,9 @@ namespace CarBookingApp.AutoMapper
                CreateMap<IdentityRole, RoleViewModel>();
                CreateMap<RoleViewModel,IdentityRole>();
 
+               CreateMap<Order, OrderViewModel>();
+               CreateMap<OrderViewModel, Order>();
+
 
 
           }
