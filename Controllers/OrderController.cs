@@ -80,6 +80,7 @@ namespace CarBookingApp.Controllers
           [Authorize]
           public IActionResult List()
           {
+               //_order.UpdateStatuses();
                if (!User.IsInRole("Admin"))
                {
                     return RedirectToAction("UserOrders");

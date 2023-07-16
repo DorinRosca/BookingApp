@@ -8,14 +8,9 @@
           <div class="detail__spesification-type">Choose Rental Start Date</div>
           <span class="text-danger">@Html.ValidationMessageFor(model => model.RentalStartDate)</span>
           <input id="RentalStartDate" name="RentalStartDate" type="text" class="form-control m-datepicker" placeholder="Choose First Date">
-     </div>
-
-     <div class="container">
           <div class="detail__spesification-type">Choose Rental End Date</div>
           <span class="text-danger">@Html.ValidationMessageFor(model => model.RentalEndDate)</span>
           <input id="RentalEndDate" name="RentalEndDate" type="text" class="form-control m-datepicker" placeholder="Choose Second Date">
-     </div>
-     <br>
           <button type="submit" class="btn btn-primary content__button">Submit</button>
-     </br>
+     </div>
 </form>

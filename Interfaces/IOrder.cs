@@ -10,6 +10,7 @@ namespace CarBookingApp.Interfaces
           public Task<IEnumerable<OrderViewModel>> GetUserOrders(string userId);
           public Task<bool> ConfirmOrder(int id); 
           public Task<bool> CancelOrder(int id);
+          public Task<bool> UpdateStatuses();
 
 
      }

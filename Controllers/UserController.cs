@@ -15,13 +15,13 @@ namespace CarBookingApp.Controllers
                this._user = user;
           }
 
-          public IActionResult Register()
+          public IActionResult SignUp()
           {
                return View();
           }
 
           [HttpPost]
-          public IActionResult Register(RegisterViewModel model)
+          public IActionResult SignUp(RegisterViewModel model)
           {
                if (ModelState.IsValid)
                {
@@ -94,6 +94,8 @@ namespace CarBookingApp.Controllers
                     {
                          return RedirectToAction("Success", "Home");
                     }
+                    return RedirectToAction("Error", "Home", new { errorMessage = "Cannot create new User-Role Relation.Data you inserted is invalid" });
+
 
                }
                return View(model);

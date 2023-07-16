@@ -19,7 +19,7 @@ namespace CarBookingApp.ViewModels
           public string UserId { get; set; }
           public IdentityUser User { get; set; }
           [Required]
-          [EarlierThanNow(ErrorMessage = "Start date must be earlier than the current date.")]
+          [EarlierThanNow(ErrorMessage = "Start date cannot be earlier than the current date.")]
           public DateTime RentalStartDate { get; set; }
 
           [Required]

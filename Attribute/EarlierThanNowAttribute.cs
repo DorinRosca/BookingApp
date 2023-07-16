@@ -15,7 +15,7 @@ namespace CarBookingApp.Attribute
                }
                else
                {
-                    return new ValidationResult("Start date must be earlier than the current date.");
+                    return new ValidationResult("Start date cannot be earlier than the current date.");
                }
           }
      }

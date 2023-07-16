@@ -7,10 +7,10 @@
           <div class="table-wrapper">
                <div class="table-title">
                     <div class="row">
-                         <div class="col-sm-8">
+                         <div class="col-12 col-sm-8">
                               <h2>Roles <b>Details</b></h2>
                          </div>
-                         <div class="col-sm-4">
+                         <div class="col-12 col-sm-4 mt-2 mt-sm-0 text-sm-end">
                               <form method="get" action="@Url.Action("Create")">
                                    @Html.AntiForgeryToken()
                                    <button type="submit" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New Role</button>
@@ -20,38 +20,36 @@
                </div>
                <table class="table table-bordered">
                     <thead>
-                    <tr>
-                         <th>Name</th>
-                         <th>Actions</th>
-                    </tr>
+                         <tr>
+                              <th>Name</th>
+                              <th>Actions</th>
+                         </tr>
                     </thead>
                     <tbody>
-                         @foreach (var roles in Model)
+                         @foreach (var role in Model)
                          {
-                                        <tr>
-                                             <td>@roles.Name</td>
-                                             <td>
-                                                  <div class="d-flex align-items-center">
-                                                       <form method="get" action="@Url.Action("Edit", new { id = roles.Id })" style="display: inline;">
-                                                            @Html.AntiForgeryToken()
+                              <tr>
+                                   <td>@role.Name</td>
+                                   <td>
+                                        <div class="d-flex align-items-center">
+                                             <form method="get" action="@Url.Action("Edit", new { id = role.Id })" style="display: inline;">
+                                                  @Html.AntiForgeryToken()
                                                   <button class="edit mr-2" type="submit" title="Edit" data-toggle="tooltip">
                                                        <i class="material-icons">&#xE254;</i>
-                                                            </button>
-                                                       </form>
-                                                       <form method="post" action="@Url.Action("Delete", new { id = roles.Id })" style="display: inline;">
-                                                            @Html.AntiForgeryToken()
-                                                            <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
-                                                                 <i class="material-icons">&#xE872;</i>
-                                                            </button>
-                                                       </form>
-                                                  </div>
-
-                                             </td>
-                                        </tr>
+                                                  </button>
+                                             </form>
+                                             <form method="post" action="@Url.Action("Delete", new { id = role.Id })" style="display: inline;">
+                                                  @Html.AntiForgeryToken()
+                                                  <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
+                                                       <i class="material-icons">&#xE872;</i>
+                                                  </button>
+                                             </form>
+                                        </div>
+                                   </td>
+                              </tr>
                          }
                     </tbody>
                </table>
           </div>
      </div>
 </div>
-

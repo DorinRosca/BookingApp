@@ -16,7 +16,7 @@ namespace CarBookingApp.Controllers
 
           public IActionResult Index()
           {
-               return View();
+               return RedirectToAction("Index","Cars");
           }
           [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
           public IActionResult Error(string errorMessage)

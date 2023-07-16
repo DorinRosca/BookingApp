@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Car_Booking_App.Entities;
 using CarBookingApp.Data;
 using CarBookingApp.Interfaces;
 using CarBookingApp.ViewModels;
@@ -63,21 +64,21 @@ namespace CarBookingApp.Repositories
           public async Task<string> GetUserId(string name)
           {
                var result = await _userManager.FindByNameAsync(name);
-               if (result == null)
+               if (result is null)
                {
-                    throw new NullReferenceException(nameof(result));
+                    return null;
                }
                return result.Id;
           }
           public async Task<string> GetRoleId(string name)
           {
                var result = await _roleManager.FindByNameAsync(name);
-               if (result == null)
-               {
-                    throw new NullReferenceException(nameof(result));
-               }
+
+               if (result is null)
+                    return null;
                return result.Id;
           }
+
 
           public async Task<bool> SetRole(UserRoleViewModel model)
           {
@@ -150,9 +151,5 @@ namespace CarBookingApp.Repositories
 
                return viewModels;
           }
-
-
-
-
      }
 }
