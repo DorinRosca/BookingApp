@@ -12,5 +12,8 @@ namespace Car_Booking_App.Entities
 
           [Required, StringLength(50), Column(TypeName = "nvarchar(50)")]
           public string StatusName { get; set; }
+
+          public virtual ICollection<Order> Order { get; set; }
+
      }
 }

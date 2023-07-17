@@ -425,31 +425,31 @@ namespace CarBookingApp.Migrations
             modelBuilder.Entity("Car_Booking_App.Entities.Car", b =>
                 {
                     b.HasOne("Car_Booking_App.Entities.Brand", "Brand")
-                        .WithMany()
+                        .WithMany("Cars")
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Car_Booking_App.Entities.Drive", "Drive")
-                        .WithMany()
+                        .WithMany("Cars")
                         .HasForeignKey("DriveId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Car_Booking_App.Entities.FuelType", "FuelType")
-                        .WithMany()
+                        .WithMany("Cars")
                         .HasForeignKey("FuelTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Car_Booking_App.Entities.Transmission", "Transmission")
-                        .WithMany()
+                        .WithMany("Cars")
                         .HasForeignKey("TransmissionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Car_Booking_App.Entities.Vehicle", "Vehicle")
-                        .WithMany()
+                        .WithMany("Cars")
                         .HasForeignKey("VehicleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -474,7 +474,7 @@ namespace CarBookingApp.Migrations
                         .IsRequired();
 
                     b.HasOne("Car_Booking_App.Entities.Status", "Status")
-                        .WithMany()
+                        .WithMany("Order")
                         .HasForeignKey("StatusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -541,6 +541,36 @@ namespace CarBookingApp.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Car_Booking_App.Entities.Brand", b =>
+                {
+                    b.Navigation("Cars");
+                });
+
+            modelBuilder.Entity("Car_Booking_App.Entities.Drive", b =>
+                {
+                    b.Navigation("Cars");
+                });
+
+            modelBuilder.Entity("Car_Booking_App.Entities.FuelType", b =>
+                {
+                    b.Navigation("Cars");
+                });
+
+            modelBuilder.Entity("Car_Booking_App.Entities.Status", b =>
+                {
+                    b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("Car_Booking_App.Entities.Transmission", b =>
+                {
+                    b.Navigation("Cars");
+                });
+
+            modelBuilder.Entity("Car_Booking_App.Entities.Vehicle", b =>
+                {
+                    b.Navigation("Cars");
                 });
 #pragma warning restore 612, 618
         }

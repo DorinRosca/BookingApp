@@ -16,7 +16,7 @@ namespace Car_Booking_App.Entities
           [ForeignKey(nameof(User))]
           public string UserId { get; set; }
 
-          [Required, ForeignKey("Car")]
+          [Required, ForeignKey(nameof(Car))]
           public int CarId { get; set; }
 
           public Car Car { get; set; }
@@ -30,7 +30,7 @@ namespace Car_Booking_App.Entities
           [Required,Range(0,double.MaxValue), Column(TypeName = "decimal(8,2)")]
           public double TotalAmount { get; set; }
 
-          [Required,ForeignKey("Status")]
+          [Required,ForeignKey(nameof(Status))]
           public byte StatusId { get; set; }
           public Status Status { get; set; }
           public IdentityUser User { get; set; }  

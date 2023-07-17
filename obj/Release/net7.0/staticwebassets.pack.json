@@ -1,0 +1,165 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\CarBookingApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CarBookingApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\css\\bootstrap-datepicker3.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datepicker3.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\2people.svg",
+      "PackagePath": "staticwebassets\\img\\2people.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Honda cr-v.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Honda cr-v.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Koenigsegg.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Koenigsegg.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Mercedes.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Mercedes.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Nissan-gtr.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Nissan-gtr.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Rolls-Roice-Wraith.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Rolls-Roice-Wraith.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Rolls-Royce-white.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\Rolls-Royce-white.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\ferrari.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\ferrari.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\rolls-royce.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\rolls-royce.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\suv-bl.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\suv-bl.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\suv.png",
+      "PackagePath": "staticwebassets\\img\\Cars\\suv.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\actions-star.svg",
+      "PackagePath": "staticwebassets\\img\\actions-star.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\img\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\cr-v.png",
+      "PackagePath": "staticwebassets\\img\\cr-v.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\gas-station.svg",
+      "PackagePath": "staticwebassets\\img\\gas-station.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\heart-contour.svg",
+      "PackagePath": "staticwebassets\\img\\heart-contour.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\heart-grey.svg",
+      "PackagePath": "staticwebassets\\img\\heart-grey.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\heart.svg",
+      "PackagePath": "staticwebassets\\img\\heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\koenigsegg.png",
+      "PackagePath": "staticwebassets\\img\\koenigsegg.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\nissan-gtr.png",
+      "PackagePath": "staticwebassets\\img\\nissan-gtr.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\rolls-royce.png",
+      "PackagePath": "staticwebassets\\img\\rolls-royce.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\search-normal.svg",
+      "PackagePath": "staticwebassets\\img\\search-normal.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\setting-4.svg",
+      "PackagePath": "staticwebassets\\img\\setting-4.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\setting.svg",
+      "PackagePath": "staticwebassets\\img\\setting.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\star.svg",
+      "PackagePath": "staticwebassets\\img\\star.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\steering.svg",
+      "PackagePath": "staticwebassets\\img\\steering.svg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\suv-bl.png",
+      "PackagePath": "staticwebassets\\img\\suv-bl.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\suv.png",
+      "PackagePath": "staticwebassets\\img\\suv.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.CarBookingApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.CarBookingApp.props",
+      "PackagePath": "build\\CarBookingApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.CarBookingApp.props",
+      "PackagePath": "buildMultiTargeting\\CarBookingApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.CarBookingApp.props",
+      "PackagePath": "buildTransitive\\CarBookingApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

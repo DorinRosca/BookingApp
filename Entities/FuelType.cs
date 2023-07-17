@@ -12,5 +12,7 @@ namespace Car_Booking_App.Entities
 
           [Required, StringLength(50), Column(TypeName = "nvarchar(50)")]
           public string FuelTypeName { get; set; }
+          public virtual ICollection<Car> Cars { get; set; }
+
      }
 }

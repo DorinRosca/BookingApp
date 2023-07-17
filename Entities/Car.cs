@@ -11,12 +11,12 @@ namespace Car_Booking_App.Entities
           public int CarId { get; set; }
 
 
-          [Required, ForeignKey("Vehicle")]
+          [Required, ForeignKey(nameof(Vehicle))]
           public byte VehicleId { get; set; }
           public Vehicle Vehicle { get; set; }
 
 
-          [Required, ForeignKey("Brand")] 
+          [Required, ForeignKey(nameof(Brand))] 
           public byte BrandId { get; set; }
           public Brand Brand { get; set; }
 
@@ -29,17 +29,17 @@ namespace Car_Booking_App.Entities
           public short Year { get; set; }
 
 
-          [Required, ForeignKey("FuelType")] 
+          [Required, ForeignKey(nameof(FuelType))] 
           public byte FuelTypeId { get; set; }
           public FuelType FuelType { get; set; }
 
 
-          [Required, ForeignKey("Transmission")] 
+          [Required, ForeignKey(nameof(Transmission))] 
           public byte TransmissionId { get; set; }
           public Transmission Transmission { get; set; }
 
 
-          [Required, ForeignKey("Drive")] 
+          [Required, ForeignKey(nameof(Drive))] 
           public byte DriveId { get; set; }
           public Drive Drive { get; set; }
 

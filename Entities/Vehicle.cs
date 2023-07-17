@@ -16,5 +16,8 @@ namespace Car_Booking_App.Entities
 
           [Required, Range(1, byte.MaxValue), Column(TypeName = "tinyint")]
           public byte SeatsNumber { get; set; }
+
+          public virtual ICollection<Car> Cars { get; set; }
+
      }
 }

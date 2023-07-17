@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZxIhaySUyjUmg+7NEUIDeBDIGNe0sjap6wWLlR7uAlk=",
+  "Hash": "BtXZU1Q07xDJh638bAiuw09+BG+1RuzFTQVuqpgUGgs=",
   "Source": "CarBookingApp",
   "BasePath": "_content/CarBookingApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CarBookingApp\\wwwroot",
       "Source": "CarBookingApp",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CarBookingApp.styles.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CarBookingApp.styles.css",
       "SourceId": "CarBookingApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "CarBookingApp.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CarBookingApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CarBookingApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CarBookingApp.bundle.scp.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CarBookingApp.bundle.scp.css",
       "SourceId": "CarBookingApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "CarBookingApp.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CarBookingApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CarBookingApp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\css\\bootstrap-datepicker3.min.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\css\\bootstrap-datepicker3.min.css",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "css/bootstrap-datepicker3.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-datepicker3.min.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\css\\main.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\css\\main.css",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "css/main.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\css\\styles.css",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\favicon.ico",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\2people.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\2people.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/2people.svg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\img\\2people.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\actions-star.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\actions-star.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/actions-star.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\img\\actions-star.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\bg.jpg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\bg.jpg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/bg.jpg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\img\\bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\ferrari.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\ferrari.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/ferrari.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\ferrari.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\Honda cr-v.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Honda cr-v.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/Honda cr-v.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\Honda cr-v.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\Koenigsegg.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Koenigsegg.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/Koenigsegg.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\Koenigsegg.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\Mercedes.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Mercedes.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/Mercedes.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\Mercedes.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\Nissan-gtr.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Nissan-gtr.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/Nissan-gtr.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\Nissan-gtr.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\Rolls-Roice-Wraith.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Rolls-Roice-Wraith.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/Rolls-Roice-Wraith.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\Rolls-Roice-Wraith.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\rolls-royce.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\rolls-royce.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/rolls-royce.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\rolls-royce.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\Rolls-Royce-white.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\Rolls-Royce-white.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/Rolls-Royce-white.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\Rolls-Royce-white.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\suv.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\suv.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/suv.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\suv.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\Cars\\suv-bl.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\Cars\\suv-bl.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/Cars/suv-bl.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Cars\\suv-bl.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\cr-v.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\cr-v.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/cr-v.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\img\\cr-v.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\gas-station.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\gas-station.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/gas-station.svg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\img\\gas-station.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\heart.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\heart.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/heart.svg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\img\\heart.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\heart-contour.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\heart-contour.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/heart-contour.svg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\img\\heart-contour.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\heart-grey.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\heart-grey.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/heart-grey.svg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\img\\heart-grey.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\koenigsegg.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\koenigsegg.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/koenigsegg.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\img\\koenigsegg.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\nissan-gtr.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\nissan-gtr.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/nissan-gtr.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\img\\nissan-gtr.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\rolls-royce.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\rolls-royce.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/rolls-royce.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\img\\rolls-royce.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\search-normal.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\search-normal.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/search-normal.svg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\img\\search-normal.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\setting.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\setting.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/setting.svg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\img\\setting.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\setting-4.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\setting-4.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/setting-4.svg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\img\\setting-4.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\star.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\star.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/star.svg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\img\\star.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\steering.svg",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\steering.svg",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/steering.svg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\img\\steering.svg"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\suv.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\suv.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/suv.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\img\\suv.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\suv-bl.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\suv-bl.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/suv-bl.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\img\\suv-bl.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\img\\user.png",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\img\\user.png",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "img/user.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\img\\user.png"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\js\\bootstrap-datepicker.min.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\js\\bootstrap-datepicker.min.js",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "js/bootstrap-datepicker.min.js",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap-datepicker.min.js"
     },
     {
-      "Identity": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\js\\script.js",
+      "Identity": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\js\\script.js",
       "SourceId": "CarBookingApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Asus\\Desktop\\Booking-Car-App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\wwwroot\\",
       "BasePath": "_content/CarBookingApp",
       "RelativePath": "js/script.js",
       "AssetKind": "All",
