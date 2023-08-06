@@ -1,0 +1,18 @@
+﻿@{
+     Layout = "~/Features/Shared/_Layout.cshtml";
+}
+@model CarBookingApp.Features.Statuses.ViewModel.StatusViewModel
+
+<form method="post" action="@Url.Action("Edit","Status")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="StatusName">Status Name</label>
+          <input type="hidden" class="form-control" id="StatusId" name="StatusId" value="@Model.StatusId">
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.StatusName)</span>
+
+          <input type="text" class="form-control" id="StatusName" name="StatusName" value="@Model.StatusName">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Update</button>
+</form>

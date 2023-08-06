@@ -594,7 +594,6 @@ C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\ob
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\scopedcss\bundle\CarBookingApp.styles.css
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\scopedcss\projectbundle\CarBookingApp.bundle.scp.css
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\CarBookingApp.csproj.CopyComplete
@@ -603,3 +602,8 @@ C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\ob
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\CarBookingApp.pdb
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\CarBookingApp.genruntimeconfig.cache
 C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\ref\CarBookingApp.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\bin\Debug\net7.0\LazyCache.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\bin\Debug\net7.0\LazyCache.AspNetCore.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\bin\Debug\net7.0\MediatR.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\.NET CORE MVC\Booking-Car-App\obj\Debug\net7.0\scopedcss\Features\Shared\_Layout.cshtml.rz.scp.css

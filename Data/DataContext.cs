@@ -1,11 +1,18 @@
-﻿using Car_Booking_App.Entities;
+﻿using CarBookingApp.Features.Brands.Entities;
+using CarBookingApp.Features.Cars.Entities;
+using CarBookingApp.Features.Drives.Entities;
+using CarBookingApp.Features.FuelTypes.Entities;
+using CarBookingApp.Features.Orders.Entities;
+using CarBookingApp.Features.Statuses.Entities;
+using CarBookingApp.Features.Transmissions.Entities;
+using CarBookingApp.Features.Vehicles.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 
 namespace CarBookingApp.Data
 {
-     public class DataContext : IdentityDbContext
+    public class DataContext : IdentityDbContext
      {
           public DataContext(DbContextOptions options) : base(options)
           {

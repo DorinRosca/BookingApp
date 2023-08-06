@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m94BgbCgxOp5KRu87QAsKGramAeO77UcA19Z16PQ8X013wULSmdrgH5MBtz0hYSfvvFBYBq79gOIhewqwnsgFA==",
+  "dgSpecHash": "HvKiV0eqfMJptDHMcRupR79xV5fPA+/LNa0pyOZOp2cnOZbAHinVGH84p8TyYlU1GzR8a/akTcjMdnOVLgrTRw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\EBS-Integrator Internship\\.NET CORE MVC\\Booking-Car-App\\CarBookingApp.csproj",
   "expectedPackageFiles": [
@@ -58,6 +58,10 @@
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\lazycache\\2.4.0\\lazycache.2.4.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\lazycache.aspnetcore\\2.4.0\\lazycache.aspnetcore.2.4.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.8\\microsoft.aspnetcore.cryptography.internal.7.0.8.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.8\\microsoft.aspnetcore.cryptography.keyderivation.7.0.8.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.8.nupkg.sha512",
