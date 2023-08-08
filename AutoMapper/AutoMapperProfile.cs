@@ -104,6 +104,7 @@ namespace CarBookingApp.AutoMapper
 
                
                CreateMap<CreateOrderCommand, Order>();
+               CreateMap<Order, OrderViewModel>();
 
           }
      }

@@ -1,0 +1,23 @@
+﻿@{
+     Layout = "~/Features/Shared/_Layout.cshtml";
+}
+@model CarBookingApp.Features.Roles.ViewModel.RoleViewModel
+
+<div class="container">
+     <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8">
+               <form method="post" action="@Url.Action("Edit", "Roles")">
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-group">
+                         <label for="Name">Name</label>
+                         <span class="text-danger">@Html.ValidationMessageFor(model => model.Name)</span>
+
+                         <input type="hidden" class="form-control" id="Id" name="RoleId" value="@Model.Id">
+                         <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+               </form>
+          </div>
+     </div>
+</div>

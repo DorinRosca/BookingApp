@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace CarBookingApp.Features.Orders.Command.Create
 {
-    public record CreateOrderCommand :IRequest<bool>
+    public record CreateOrderCommand :IRequest<OrderViewModel>
      {
           public int OrderId { get; set; }
           [Required]

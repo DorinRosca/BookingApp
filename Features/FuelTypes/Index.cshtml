@@ -1,0 +1,56 @@
+﻿@model IEnumerable<CarBookingApp.Features.FuelTypes.ViewModel.FuelTypeViewModel>
+@{
+     Layout = "~/Features/Shared/_Layout.cshtml";
+}
+<div class="container-lg">
+     <div class="table-responsive">
+          <div class="table-wrapper">
+               <div class="table-title">
+                    <div class="row">
+                         <div class="col-sm-8">
+                              <h2>FuelTypes <b>Details</b></h2>
+                         </div>
+                         <div class="col-sm-4">
+                              <a href="@Url.Action("Create","FuelTypes")" class="btn btn-info add-new">
+                                   <i class="fa fa-plus"></i> Add New
+                              </a>
+                         </div>
+                    </div>
+               </div>
+               <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                         <th>Name</th>
+                         <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                         @foreach (var fuelType in Model)
+                         {
+                              <tr>
+                                   <td>@fuelType.FuelTypeName</td>
+                                   <td>
+                                        <div class="d-flex align-items-center">
+                                             <form method="get" action="@Url.Action("Edit","FuelTypes", new { id = fuelType.FuelTypeId })" style="display: inline;">
+                                                  @Html.AntiForgeryToken()
+                                                  <button class="edit mr-2" title="EditDrive" data-toggle="tooltip">
+                                                       <i class="material-icons">&#xE254;</i>
+                                                  </button>
+                                             </form>
+                                             <form method="post" action="@Url.Action("Delete","FuelTypes", new { id = fuelType.FuelTypeId})" style="display: inline;">
+                                                  @Html.AntiForgeryToken()
+                                                  <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
+                                                       <i class="material-icons">&#xE872;</i>
+                                                  </button>
+                                             </form>
+                                        </div>
+
+                                   </td>
+                              </tr>
+                         }
+                    </tbody>
+               </table>
+          </div>
+     </div>
+</div>
+

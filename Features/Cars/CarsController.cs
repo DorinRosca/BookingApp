@@ -9,21 +9,17 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using CarBookingApp.Features.Cars.ViewModel;
-using LazyCache;
-
 namespace CarBookingApp.Features.Cars
 {
     public class CarsController : Controller
     {
         private readonly IMediator _mediator;
-        private readonly IAppCache _appCache;
 
-        public CarsController(IMediator mediator, IAppCache appCache)
-        {
-             _mediator = mediator;
-             _appCache = appCache;
-        }
-        public ActionResult Index(CarFilterViewModel model)
+        public CarsController(IMediator mediator)
+          {
+               _mediator = mediator;
+          }
+          public ActionResult Index(CarFilterViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -53,14 +49,14 @@ namespace CarBookingApp.Features.Cars
                 }
             }
 
-            var carDetails = await _appCache.GetOrAddAsync("CarDetails.Get", () => _mediator.Send(new GetCarDetailsQuery()));
+            var carDetails = await _mediator.Send(new GetCarDetailsQuery());
 
                return View("CreateCar", carDetails);
         }
         [Authorize(Policy = "Admin")]
         public async Task<IActionResult> CreateCar()
         {
-             var carDetails = await _appCache.GetOrAddAsync("CarDetails.Get", () => _mediator.Send(new GetCarDetailsQuery()));
+             var carDetails = await _mediator.Send(new GetCarDetailsQuery());
             return View("CreateCar", carDetails);
         }
 
@@ -115,17 +111,17 @@ namespace CarBookingApp.Features.Cars
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
         {
-            if (ModelState.IsValid)
+             if (!ModelState.IsValid) 
+                  return RedirectToAction("Error", "Home");
+             var result = _mediator.Send(new DeleteCarCommand(id)).Result;
+            if (result)
             {
 
-                var result = _mediator.Send(new DeleteCarCommand(id)).Result;
-                if (result)
-                {
-
-                         return RedirectToAction("Success", "Home");
-                }
+                 return RedirectToAction("Success", "Home");
             }
             return RedirectToAction("Error", "Home");
         }
+
+
     }
 }

@@ -50,14 +50,14 @@
                                     </svg>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="@Url.Action("Index", "Drive")">Drives</a>
-                                    <a href="@Url.Action("Index", "Brand")">Brands</a>
-                                    <a href="@Url.Action("Index", "FuelType")">FuelTypes</a>
-                                    <a href="@Url.Action("Index", "Transmission")">Transmissions</a>
-                                    <a href="@Url.Action("Index", "Vehicle")">Vehicles</a>
-                                    <a href="@Url.Action("Index", "Status")">Status</a>
-                                    <a href="@Url.Action("Index", "Role")">Roles</a>
-                                    <a href="@Url.Action("Index", "User")">Users</a>
+                                    <a href="@Url.Action("Index", "Drives")">Drives</a>
+                                    <a href="@Url.Action("Index", "Brands")">Brands</a>
+                                    <a href="@Url.Action("Index", "FuelTypes")">FuelTypes</a>
+                                    <a href="@Url.Action("Index", "Transmissions")">Transmissions</a>
+                                    <a href="@Url.Action("Index", "Vehicles")">Vehicles</a>
+                                    <a href="@Url.Action("Index", "Statuses")">Status</a>
+                                    <a href="@Url.Action("Index", "Roles")">Roles</a>
+                                    <a href="@Url.Action("Index", "Users")">Users</a>
                                 </div>
                             </div>
                         }
@@ -82,25 +82,25 @@
                     <!-- Add your nav item content here -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Logout" style="font-size: 20px;">Logout</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Logout" style="font-size: 20px;">Logout</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="List" style="font-size: 20px;">Orders</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="List" style="font-size: 20px;">Orders</a>
                 </li>
             }
             else
             {
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Login" style="font-size: 20px;">Login</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Login" style="font-size: 20px;">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="SignUp" style="font-size: 20px;">SignUp</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="SignUp" style="font-size: 20px;">SignUp</a>
                 </li>
 
             }
 
             <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="" asp-controller="Cars" asp-action="Index" style="font-size: 20px;">Cars</a>
+                 <a class="nav-link text-dark" asp-area="" asp-controller="Cars" asp-action="Index" style="font-size: 20px;">Cars</a>
             </li>
             @if (User.IsInRole("Admin"))
             {
@@ -109,14 +109,14 @@
                         <a class="nav-link text-dark" as style="font-size: 20px;">Settings</a>
                     </li>
                     <div class="dropdown-content">
-                        <a href="@Url.Action("Index", "Drive")">Drives</a>
-                        <a href="@Url.Action("Index", "Brand")">Brands</a>
-                        <a href="@Url.Action("Index", "FuelType")">FuelTypes</a>
-                        <a href="@Url.Action("Index", "Transmission")">Transmissions</a>
-                        <a href="@Url.Action("Index", "Vehicle")">Vehicles</a>
-                        <a href="@Url.Action("Index", "Status")">Status</a>
-                        <a href="@Url.Action("Index", "Role")">Roles</a>
-                        <a href="@Url.Action("Index", "User")">Users</a>
+                        <a href="@Url.Action("Index", "Drives")">Drives</a>
+                        <a href="@Url.Action("Index", "Brands")">Brands</a>
+                        <a href="@Url.Action("Index", "FuelTypes")">FuelTypes</a>
+                        <a href="@Url.Action("Index", "Transmissions")">Transmissions</a>
+                        <a href="@Url.Action("Index", "Vehicles")">Vehicles</a>
+                        <a href="@Url.Action("Index", "Statuses")">Status</a>
+                        <a href="@Url.Action("Index", "Roles")">Roles</a>
+                        <a href="@Url.Action("Index", "Users")">Users</a>
                     </div>
                 </div>
             }

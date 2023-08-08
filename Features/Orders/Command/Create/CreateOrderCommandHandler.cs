@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
 using CarBookingApp.Data;
 using CarBookingApp.Features.Orders.Entities;
+using CarBookingApp.Features.Orders.ViewModel;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarBookingApp.Features.Orders.Command.Create
 {
-    public class CreateOrderCommandHandler :IRequestHandler<CreateOrderCommand, bool>
+    public class CreateOrderCommandHandler :IRequestHandler<CreateOrderCommand, OrderViewModel>
      {
           private readonly IMapper _mapper;
           private readonly DataContext _context;
@@ -17,7 +18,7 @@ namespace CarBookingApp.Features.Orders.Command.Create
                _context = context;
           }
 
-          public async Task<bool> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
+          public async Task<OrderViewModel> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
           {
                if (request == null)
                {
@@ -28,19 +29,23 @@ namespace CarBookingApp.Features.Orders.Command.Create
                var isAvailable = CarIsAvailable(request).Result;
                if (!isAvailable)
                {
-                    return false;
+                    throw new NullReferenceException();
                }
 
                var model = _mapper.Map<Order>(request);
 
                await _context.Order.AddAsync(model,cancellationToken);
                var result = await _context.SaveChangesAsync(cancellationToken);
-               return result > 0;
+               if (result > 0)
+               {
+                    return _mapper.Map<OrderViewModel>(model);
+               }
+               throw new NullReferenceException();
           }
           public CreateOrderCommand SetDefaultStatus(CreateOrderCommand model)
           {
                var processing = _context.Status.FirstOrDefault(s => s.StatusName == "Processing");
-               model.StatusId = processing.StatusId;
+               if (processing != null) model.StatusId = processing.StatusId;
                return model;
           }
 

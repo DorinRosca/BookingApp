@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+
 builder.Services.AddAuthorization(options =>
 {
      options.AddPolicy("Admin",
@@ -23,16 +24,6 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
      options.ViewLocationFormats.Clear();
      // Add the root path where your custom views are located
      options.ViewLocationFormats.Add("/Features/Shared/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Brands/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Cars/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Drives/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/FuelTypes/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Orders/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Roles/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Statuses/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Transmissions/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Users/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
-     options.ViewLocationFormats.Add("/Features/Vehicles/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
      options.ViewLocationFormats.Add("/Features/{1}/{0}" + RazorViewEngine.ViewExtension);
 
 });
