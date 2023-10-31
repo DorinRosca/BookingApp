@@ -1,0 +1,21 @@
+﻿<!-- Include the necessary Font Awesome CSS link -->
+@{
+     ViewData["Title"] = "Success";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- Your success message -->
+<div id="successMessage" style="background-color: #dff0d8; color: #3c763d; padding: 10px; border-radius: 4px;">
+     <i class="fa fa-check-circle" style="margin-right: 5px;"></i>
+     <span style="font-weight: bold;">Success!</span> Your action was completed successfully.
+</div>
+
+<!-- Go Back button -->
+<button onclick="goBack()" class="btn btn-primary" style="margin-top: 10px;">Go Back</button>
+
+<!-- JavaScript function to handle going back -->
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>

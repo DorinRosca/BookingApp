@@ -1,0 +1,18 @@
+﻿@{
+     Layout = "~/Features/Shared/_Layout.cshtml";
+}
+@model CarBookingApp.Features.FuelTypes.ViewModel.FuelTypeViewModel
+
+<form method="post" action="@Url.Action("Edit","FuelTypes")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="FuelTypeName">FuelType Name</label>
+          <input type="hidden" class="form-control" id="FuelTypeId" name="FuelTypeId" value="@Model.FuelTypeId">
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.FuelTypeName)</span>
+
+          <input type="text" class="form-control" id="FuelTypeName" name="FuelTypeName" value="@Model.FuelTypeName">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Update</button>
+</form>

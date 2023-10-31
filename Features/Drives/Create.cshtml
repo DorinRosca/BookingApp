@@ -1,0 +1,18 @@
+﻿@{
+     Layout = "~/Features/Shared/_Layout.cshtml";
+}
+
+@model CarBookingApp.Features.Drives.ViewModel.DriveViewModel
+
+<form method="post" action="@Url.Action("Create","Drives")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="DriveName">DriveName</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.DriveName)</span>
+
+          <input type="text" class="form-control" id="DriveName" name="DriveName">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Create</button>
+</form>
