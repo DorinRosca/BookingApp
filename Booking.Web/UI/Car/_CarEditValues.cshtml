@@ -1,0 +1,77 @@
+﻿@using Booking.Application.Features.Car
+@model CarViewModel
+<form method="post" action="@Url.Action("Edit", "Car")" enctype="multipart/form-data">
+     @Html.AntiForgeryToken()
+     <input type="hidden" class="form-control" id="CarId" name="CarId" value="@Model.CarId" asp-action="Edit">
+     @{
+          var base64 = Convert.ToBase64String(Model.Image);
+     }
+
+     <input type="hidden" class="form-control" id="Image" name="Image" value="@base64">
+
+     <div class="form-group">
+          <label asp-for="BrandId">Brand:</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.BrandId)</span>
+          <select asp-for="BrandId" asp-items="@Model.Brands.Select(b => new SelectListItem { Value = b.BrandId.ToString(), Text = b.BrandName })" class="form-control">
+               <option value="">Select Brand</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="DriveId">Drive:</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.DriveId)</span>
+          <select asp-for="DriveId" asp-items="@Model.Drives.Select(d => new SelectListItem { Value = d.DriveId.ToString(), Text = d.DriveName })" class="form-control">
+               <option value="">Select Drive</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="FuelTypeId">Fuel Type:</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.FuelTypeId)</span>
+          <select asp-for="FuelTypeId" asp-items="@Model.FuelTypes.Select(f => new SelectListItem { Value = f.FuelTypeId.ToString(), Text = f.FuelTypeName })" class="form-control">
+               <option value="">Select Fuel Type</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="TransmissionId">Transmission:</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.TransmissionId)</span>
+
+          <select asp-for="TransmissionId" asp-items="@Model.Transmissions.Select(t => new SelectListItem { Value = t.TransmissionId.ToString(), Text = t.TransmissionName })" class="form-control">
+               <option value="">Select Transmission</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="VehicleId">Vehicle:</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.VehicleId)</span>
+          <select asp-for="VehicleId" asp-items="@Model.Vehicles.Select(v => new SelectListItem { Value = v.VehicleId.ToString(), Text = v.VehicleName })" class="form-control">
+               <option value="">Select Vehicle</option>
+          </select>
+     </div>
+
+     <div class="form-group">
+          <label asp-for="ModelName">ModelName</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.ModelName)</span>
+          <input type="text" class="form-control" id="ModelName" name="ModelName" value="@Model.ModelName"/>
+     </div>
+
+
+     <div class="form-group">
+          <label asp-for="Year">Year</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.Year)</span>
+          <input type="text" class="form-control" id="Year" name=Year value = "@Model.Year">
+     </div>
+     <div class="form-group">
+          <label asp-for="PricePerDay">PricePerDay</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.PricePerDay)</span>
+          <input type="text" class="form-control" id="PricePerDay" name=PricePerDay value="@Model.PricePerDay">
+     </div>
+
+     <div class="mb-3">
+          <label class="form-label">UploadFile</label>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.ImageFile)</span>
+          <input type="file" class="form-control" name="ImageFile" value ="@Model.ImageFile"/>
+     </div>
+     <button type="submit" class="btn btn-primary">Update</button>
+</form>   

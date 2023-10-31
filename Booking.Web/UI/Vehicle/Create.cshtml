@@ -1,0 +1,42 @@
+﻿@model AddVehicleResponse
+
+@if (Model != null)
+{
+     @if (Model.Success)
+     {
+          <div class="alert alert-success">
+               The Vehicle was added successfully
+          </div>
+     }
+     else
+     {
+          <h3>@Model.BaseMessage</h3>
+
+          @if (Model.ValidationErrors != null && Model.ValidationErrors.Any())
+          {
+               <div class="alert alert-danger">
+                    <ul>
+                         @foreach (var error in Model.ValidationErrors)
+                         {
+                              <li>@error</li>
+                         }
+                    </ul>
+               </div>
+          }
+     }
+}
+
+<form method="post" action="@Url.Action("Create", "Vehicle")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="VehicleName">Vehicle Name</label>
+          <input type="text" class="form-control" id="VehicleName" style="width: 50%;" name="VehicleName">
+          <label for="SeatNumber">Number of Seat</label>
+
+          <input type="text" class="form-control" id="SeatNumber" style="width: 50%;" name="SeatNumber">
+     </div>
+
+
+     <button type="submit" class="btn btn-primary">Create</button>
+</form>

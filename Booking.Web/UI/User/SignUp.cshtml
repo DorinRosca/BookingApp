@@ -1,0 +1,49 @@
+﻿@model RegisterResponse
+<div class="container mt-5">
+     <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+               <div class="card shadow">
+                    <div class="card-body p-4 p-sm-5">
+                         <div class="catalogue-item-specification__element-wrap text-center">
+                              <h2 class="text-primary display-5 fw-bold">SignUp</h2>
+                         </div>
+                         <form method="post" action="@Url.Action("SignUp", "User")" style="display: inline;">
+                              @Html.AntiForgeryToken()
+
+                              <div class="form-group">
+                                   <label for="Email">Email</label>
+                                   <input type="text" class="form-control" id="Email" name="Email">
+                              </div>
+
+                              <div class="form-group">
+                                   <label for="Password">Password</label>
+                                   <input type="password" class="form-control" id="Password" name="Password">
+                              </div>
+
+                              <div class="form-group">
+                                   <label for="ConfirmPassword">ConfirmPassword</label>
+                                   <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword">
+                              </div>
+                              <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
+                              @if (Model is not null && Model.Success == false)
+                              {
+                                   <h3>@Model.BaseMessage</h3>
+
+                                   @if (Model.ValidationErrors != null && Model.ValidationErrors.Any())
+                                   {
+                                        @foreach (var e in Model.ValidationErrors)
+                                        {
+                                             <p class="text-danger m-0 my-1">@e</p>
+                                        }
+                                   }
+                              }
+                         </form>
+
+                         <div class="mt-3 text-center">
+                              <p>Already have an account? <a href="@Url.Action("Login","User")">Sign In</a></p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>

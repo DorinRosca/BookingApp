@@ -1,0 +1,5 @@
+﻿@using Booking.Application.Features.Car
+@using Booking.Application.Features.Car.Commands.Add
+@model Tuple<CarViewModel,AddCarResponse>
+@Html.Partial("_CarAddError", Model.Item2)
+@Html.Partial("_CarCreateValues", Model.Item1)

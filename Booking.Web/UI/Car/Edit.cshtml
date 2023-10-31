@@ -1,0 +1,5 @@
+﻿@using Booking.Application.Features.Car
+@using Booking.Application.Features.Car.Commands.Update
+@model Tuple<CarViewModel,UpdateCarResponse>
+@Html.Partial("_CarEditError", Model.Item2)
+@Html.Partial("_CarEditValues", Model.Item1)

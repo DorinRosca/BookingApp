@@ -1,0 +1,115 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model Booking.Application.Features.Car.CarModel
+<div class="main">
+     <section class="content">
+          <div class="wrapper-content content__wrap">
+               <!-- content gallery -->
+               <section class="content__gallery">
+                    @if (Model.Image != null && Model.Image.Length > 0)
+                    {
+                         var imageBase64 = Convert.ToBase64String(Model.Image);
+                         var imageSrc = string.Format("data:image;base64,{0}", imageBase64);
+
+                         <img src="@imageSrc" alt="Car Image" style="width: 400px; height: 100px;"/>
+                    }
+                    else
+                    {
+                         <p>No image available</p>
+                    }
+               </section>
+               <!-- content detail -->
+               <section class="content__detail">
+                    <!-- detail primary wrap -->
+                    <div class="content__detail-primary-wrap">
+                         <div class="content__detail-title-wrap">
+                              <h3 class="content-detail__title">
+                                   @Model.ModelName
+                                   @Model.Brand.BrandName
+                              </h3>
+                         </div>
+
+                         <div class="content__detail-spesification-wrap">
+                              <div class="detail-spesification__primary-wrap">
+                                   <div class="detail__spesification">
+                                        <span class="detail__spesification-title">
+                                             Vehicle
+                                        </span>
+                                        <span class="detail__spesification-type">
+                                             @Model.Vehicle.VehicleName
+                                        </span>
+                                   </div>
+                                   <div class="detail__spesification">
+                                        <span class="detail__spesification-title">
+                                             Transmission
+                                        </span>
+                                        <span class="detail__spesification-type">
+                                             @Model.Transmission.TransmissionName
+                                        </span>
+                                   </div>
+                              </div>
+                              <div class="detail-spesification__secondary-wrap">
+                                   <div class="detail__spesification">
+                                        <span class="detail__spesification-title">
+                                             Year
+                                        </span>
+                                        <span class="detail__spesification-type">
+                                             @Model.Year
+                                        </span>
+                                   </div>
+                                   <div class="detail__spesification">
+                                        <span class="detail__spesification-title">
+                                             Drive
+                                        </span>
+                                        <span class="detail__spesification-type">
+                                             @Model.Drive.DriveName
+                                        </span>
+                                   </div>
+                              </div>
+                              <div class="detail-spesification__secondary-wrap">
+                                   <div class="detail__spesification">
+                                        <span class="detail__spesification-title">
+                                             Capacity
+                                        </span>
+                                        <span class="detail__spesification-type">
+                                             @Model.Vehicle.SeatNumber Person
+                                        </span>
+                                   </div>
+                                   <div class="detail__spesification">
+                                        <span class="detail__spesification-title">
+                                             Fuel
+                                        </span>
+                                        <span class="detail__spesification-type">
+                                             @Model.FuelType.FuelTypeName
+                                        </span>
+                                   </div>
+                              </div>
+                               
+                         </div>
+                    </div>
+                    <!-- detail secondary wrap -->
+                    <div class="content__detail-secondary-wrap content__price-button-wrap">
+                         <div class="content__price__wrap">
+                              <span class="content__price detail__price">
+                                   $ @Model.PricePerDay / <span class="content__price-dscr detail__price-dscr">day</span>
+                              </span>
+                               
+                         </div>
+                         @if (User.Identity.IsAuthenticated)
+                         {<form method="get" action="@Url.Action("Create", "Order")">
+                              <input type="hidden" name="carId" value="@Model.CarId"/>
+                              <button type="submit" class="btn btn-primary content__button">Rent Now</button>
+                         </form>
+                         }
+                         else
+                         {
+                              <form method="get" action="@Url.Action("Login", "User")">
+                              <input type="hidden" name="carId" value="@Model.CarId"/>
+                              <button type="submit" class="btn btn-primary content__button">Rent Now</button>
+                         </form>
+                         }
+                    </div>
+               </section>
+
+          </div>
+     </section>
+</div>

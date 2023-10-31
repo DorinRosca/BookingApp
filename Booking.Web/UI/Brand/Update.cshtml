@@ -1,0 +1,37 @@
+﻿@using Microsoft.IdentityModel.Tokens
+@model Tuple<UpdateBrandResponse,BrandModel>
+
+
+@if ( Model.Item1 != null && Model.Item1.Success == true)
+{
+     <div class="alert alert-success">
+          The Brand was updated successfully
+     </div>
+
+}
+
+@if (Model.Item1 != null && !Model.Item1.BaseMessage.IsNullOrEmpty())
+{
+     <h3>@Model.Item1.BaseMessage</h3>
+
+     @if (Model.Item1.ValidationErrors != null && Model.Item1.ValidationErrors.Any())
+     {
+          @foreach (var e in Model.Item1.ValidationErrors)
+          {
+               <p class="text-danger m-0 my-1">@e</p>
+          }
+     }
+}
+
+
+<form method="post" action="@Url.Action("Update","Brand")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="BrandName">Brand Name</label>
+          <input type="hidden" class="form-control" id="BrandId" name="BrandId" value="@Model.Item2.BrandId">
+          <input type="text" class="form-control" id="BrandName" name="BrandName" value="@Model.Item2.BrandName">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Update</button>
+</form>

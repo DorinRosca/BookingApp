@@ -1,0 +1,16 @@
+﻿@using Booking.Application.Features.Order
+@model OrderModel
+
+<form method="post" action="@Url.Action("Create", "Order")">
+     <input type="hidden" name="carId" value="@Model.CarId" />
+
+     <div class="container">
+          <div class="detail__spesification-type">Choose Rental Start Date</div>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.RentalStartDate)</span>
+          <input id="RentalStartDate" name="RentalStartDate" type="text" class="form-control m-datepicker" placeholder="Choose First Date">
+          <div class="detail__spesification-type">Choose Rental End Date</div>
+          <span class="text-danger">@Html.ValidationMessageFor(model => model.RentalEndDate)</span>
+          <input id="RentalEndDate" name="RentalEndDate" type="text" class="form-control m-datepicker" placeholder="Choose Second Date">
+          <button type="submit" class="btn btn-primary content__button">Submit</button>
+     </div>
+</form>

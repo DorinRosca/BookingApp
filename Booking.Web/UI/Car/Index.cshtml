@@ -1,0 +1,183 @@
+﻿@using Booking.Application.Features.Car
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.IdentityModel.Tokens
+@model CarFilterModel
+
+<div class="main">
+     <!-- sidebar -->
+     <div class="offcanvas-body d-block">
+          <div class="aside__wrap">
+               <form method="get" action="@Url.Action("Index","Car")">
+
+                    <!-- Brand Section -->
+                    <div class="aside__wrap">
+                         <h3 class="aside__title">
+                              Brand
+                         </h3>
+                         @foreach(var brand in Model.Brands)
+                         {
+                         <div class="aside__check">
+                              <input class="form-check-input" type="checkbox" id="checkbox-brand-@brand.BrandId" name="SelectedBrandId" value="@brand.BrandId" @(Model.SelectedBrandId != null && Model.SelectedBrandId.Contains(brand.BrandId) ? "checked" : "")>
+                              <label class="form-check-label px-1" for="checkbox-two-person">
+                                   @brand.BrandName
+                              </label>
+                         </div>
+                    }
+                    </div>
+                    <!-- Vehicle Section -->
+                    <div class="aside__wrap">
+                         <h3 class="aside__title">
+                              Vehicle
+                         </h3>
+                         @foreach(var vehicle in Model.Vehicles)
+                         {
+                              <div class="aside__check">
+                                   <input class="form-check-input" type="checkbox" id="checkbox-vehicle-@vehicle.VehicleId" name="SelectedVehicleId" value="@vehicle.VehicleId" @(Model.SelectedVehicleId != null && Model.SelectedVehicleId.Contains(vehicle.VehicleId) ? "checked" : "")>
+                                   <label class="form-check-label px-1" for="checkbox-two-person">
+                                        @vehicle.VehicleName 
+                                   </label>
+                              </div>
+                         }
+                    </div>
+
+                    <!-- Apply Button -->
+                    <div class="text-center mt-3">
+                         <button type="submit" class="btn btn-primary">Apply</button>
+                    </div>
+
+               </form>
+          </div>
+     </div>
+
+
+
+    <!-- content -->
+    <section class="content">
+        <div class="wrapper-content content__wrap">
+             <!-- catalogue recent car -->
+
+             <form method="get" action="@Url.Action("Index","Car")" class="mt-3">
+                  <div class="input-group">
+                       <input type="search" class="form-control rounded-pill" placeholder="Search" id="SearchCarName" name="SearchCarName">
+                       <button class="btn btn-primary rounded-pill" type="submit">
+                            <i class="bi bi-search">search</i>
+                       </button>
+                  </div>
+             </form>
+             @if (User.IsInRole("Admin"))
+             {
+                  <div class="col-sm-4">
+                       <a href="@Url.Action("Create","Car")" class="btn btn-info add-new">
+                            <i class="fa fa-plus"></i> Add New
+                       </a>
+                  </div>
+             }
+
+            <section class="content__catalogue">
+                <div class="content__catalogue-item-wrap-primary">
+                     <div class="content__catalogue-item-wrap-secondary">
+                          @if (Model.Cars.IsNullOrEmpty())
+                          {
+                               <div class="catalogue-item-specification__element-wrap text-center">
+                                    <h2 class="text-primary display-4 fw-bold">There are no cars</h2>
+                               </div>
+                          }
+                          else
+                          {
+                               @foreach (var car in Model.Cars)
+                               {
+                                    <div class="responsive-div">
+
+                                         <!-- catalogue recent car 1 -->
+                                         <div class="content__catalogue-item-primary-wrap">
+                                              <div class="content__catalogue-item-header">
+                                                   <h5 class="catalogue-item-header__title">
+                                                        @car.ModelName
+                                                   </h5>
+                                                   <span class="catalogue-item-header__type">
+                                                        @car.Vehicle.VehicleName
+                                                   </span>
+                                              </div>
+                                              @if (car.Image != null && car.Image.Length > 0)
+                                              {
+                                                   var imageBase64 = Convert.ToBase64String(car.Image);
+                                                   var imageSrc = string.Format("data:image;base64,{0}", imageBase64);
+
+                                                   <img src="@imageSrc" alt="Car Image" style="width: 400px; height: 100px;"/>
+                                              }
+                                              else
+                                              {
+                                                   <p>No image available</p>
+                                              }
+                                         </div>
+                                         <div class="content__catalogue-item-secondary-wrap">
+                                              <div class="content__catalogue-item-specification-wrap">
+                                                   <span class="catalogue-item-specification__element-wrap">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                             <path d="M22.34 9.33L20.34 8.33C19.97 8.15 19.51 8.29 19.33 8.66C19.14 9.04 19.29 9.49 19.66 9.67L21.25 10.46V15.25L17.5 15.26V5C17.5 3 16.16 2 14.5 2H6.5C4.84 2 3.5 3 3.5 5V21.25H2C1.59 21.25 1.25 21.59 1.25 22C1.25 22.41 1.59 22.75 2 22.75H19C19.41 22.75 19.75 22.41 19.75 22C19.75 21.59 19.41 21.25 19 21.25H17.5V16.76L22 16.75C22.42 16.75 22.75 16.41 22.75 16V10C22.75 9.72 22.59 9.46 22.34 9.33ZM6 6.89C6 5.5 6.85 5 7.89 5H13.12C14.15 5 15 5.5 15 6.89V8.12C15 9.5 14.15 10 13.11 10H7.89C6.85 10 6 9.5 6 8.11V6.89ZM6.5 12.25H9.5C9.91 12.25 10.25 12.59 10.25 13C10.25 13.41 9.91 13.75 9.5 13.75H6.5C6.09 13.75 5.75 13.41 5.75 13C5.75 12.59 6.09 12.25 6.5 12.25Z" fill="#90A3BF"/>
+                                                        </svg>
+                                                        <span class="catalogue-item-specification__element">
+                                                             @car.FuelType.FuelTypeName
+                                                        </span>
+                                                   </span>
+                                                   <span class="catalogue-item-specification__element-wrap">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                             <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.53 2 12 2Z" fill="#90A3BF"/>
+                                                             <rect x="4" y="4" width="16" height="16" rx="8" fill="white"/>
+                                                             <path d="M12 6C8.688 6 6 8.688 6 12C6 15.312 8.688 18 12 18C15.312 18 18 15.312 18 12C18 8.688 15.318 6 12 6Z" fill="#90A3BF"/>
+                                                             <rect x="8" y="8" width="8" height="8" rx="4" fill="white"/>
+                                                             <rect x="11" y="17" width="2" height="4" fill="#90A3BF"/>
+                                                             <rect x="17" y="11" width="4" height="2" fill="#90A3BF"/>
+                                                             <rect x="3" y="11" width="4" height="2" fill="#90A3BF"/>
+                                                        </svg>
+                                                        <span class="catalogue-item-specification__element">
+                                                             @car.Transmission.TransmissionName
+                                                        </span>
+                                                   </span>
+                                                   <span class="catalogue-item-specification__element-wrap">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                             <path d="M9 2C6.38 2 4.25 4.13 4.25 6.75C4.25 9.32 6.26 11.4 8.88 11.49C8.96 11.48 9.04 11.48 9.1 11.49C9.12 11.49 9.13 11.49 9.15 11.49C9.16 11.49 9.16 11.49 9.17 11.49C11.73 11.4 13.74 9.32 13.75 6.75C13.75 4.13 11.62 2 9 2Z" fill="#90A3BF"/>
+                                                             <path d="M14.08 14.1499C11.29 12.2899 6.73996 12.2899 3.92996 14.1499C2.65996 14.9999 1.95996 16.1499 1.95996 17.3799C1.95996 18.6099 2.65996 19.7499 3.91996 20.5899C5.31996 21.5299 7.15996 21.9999 8.99996 21.9999C10.84 21.9999 12.68 21.5299 14.08 20.5899C15.34 19.7399 16.04 18.5999 16.04 17.3599C16.03 16.1299 15.34 14.9899 14.08 14.1499Z" fill="#90A3BF"/>
+                                                             <path d="M19.9901 7.3401C20.1501 9.2801 18.7701 10.9801 16.8601 11.2101C16.8501 11.2101 16.8501 11.2101 16.8401 11.2101H16.8101C16.7501 11.2101 16.6901 11.2101 16.6401 11.2301C15.6701 11.2801 14.7801 10.9701 14.1101 10.4001C15.1401 9.4801 15.7301 8.1001 15.6101 6.6001C15.5401 5.7901 15.2601 5.0501 14.8401 4.4201C15.2201 4.2301 15.6601 4.1101 16.1101 4.0701C18.0701 3.9001 19.8201 5.3601 19.9901 7.3401Z" fill="#90A3BF"/>
+                                                             <path d="M21.99 16.5904C21.91 17.5604 21.29 18.4004 20.25 18.9704C19.25 19.5204 17.99 19.7804 16.74 19.7504C17.46 19.1004 17.88 18.2904 17.96 17.4304C18.06 16.1904 17.47 15.0004 16.29 14.0504C15.62 13.5204 14.84 13.1004 13.99 12.7904C16.2 12.1504 18.98 12.5804 20.69 13.9604C21.61 14.7004 22.08 15.6304 21.99 16.5904Z" fill="#90A3BF"/>
+                                                        </svg>
+                                                        <span class="catalogue-item-specification__element">
+                                                             @car.Vehicle.SeatNumber People
+                                                        </span>
+                                                   </span>
+                                              </div>
+                                              <div class="content__price-button-wrap">
+                                                   <div class="content__price__wrap">
+                                                        <span class="content__price">
+                                                             $ @car.PricePerDay/ <span class="content__price-dscr">day</span>
+                                                        </span>
+                                                        <div>
+                                                             <span class="content__price-old">
+                                                                  <s></s>
+                                                             </span>
+                                                        </div>
+                                                   </div>
+                                                   @if (User.IsInRole("Admin"))
+                                                   {
+                                                        <form method="post" action="@Url.Action("Delete","Car", new { id = car.CarId })">
+                                                             <button class="btn btn-danger btn-lg" type="submit" title="Delete">Delete</button>
+                                                        </form>
+
+                                                        <form method="get" action="@Url.Action("Edit","Car", new { id = car.CarId })">
+                                                             <button type="submit" class="btn btn-secondary btn-lg">Edit</button>
+                                                        </form>
+                                                   }
+                                                   <form method="get" action="@Url.Action("Details","Car", new { id = car.CarId })">
+                                                        <button type="submit" class="btn btn-primary btn-lg content__button">Details</button>
+                                                   </form>
+                                              </div>
+                                         </div>
+                                    </div>
+                               }
+                          }
+                     </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</div>

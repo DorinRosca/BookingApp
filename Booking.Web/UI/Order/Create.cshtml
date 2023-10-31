@@ -1,0 +1,5 @@
+﻿@using Booking.Application.Features.Order
+@using Booking.Application.Features.Order.Commands.Add
+@model Tuple<OrderModel,AddOrderResponse>
+@Html.Partial("_CreateResult", Model.Item2)
+@Html.Partial("_CreateValues", Model.Item1)

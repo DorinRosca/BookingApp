@@ -1,0 +1,39 @@
+﻿@using Microsoft.IdentityModel.Tokens
+@model Tuple<UpdateVehicleResponse,VehicleModel>
+
+
+@if ( Model.Item1 != null && Model.Item1.Success == true)
+{
+     <div class="alert alert-success">
+          The Vehicle was updated successfully
+     </div>
+
+}
+
+@if (Model.Item1 != null && !Model.Item1.BaseMessage.IsNullOrEmpty())
+{
+     <h3>@Model.Item1.BaseMessage</h3>
+
+     @if (Model.Item1.ValidationErrors != null && Model.Item1.ValidationErrors.Any())
+     {
+          @foreach (var e in Model.Item1.ValidationErrors)
+          {
+               <p class="text-danger m-0 my-1">@e</p>
+          }
+     }
+}
+
+
+<form method="post" action="@Url.Action("Update","Vehicle")">
+     @Html.AntiForgeryToken()
+
+     <div class="form-group">
+          <label for="VehicleName">Vehicle Name</label>
+          <input type="hidden" class="form-control" id="VehicleId" name="VehicleId" value="@Model.Item2.VehicleId">
+          <input type="text" class="form-control" id="VehicleName" name="VehicleName" value="@Model.Item2.VehicleName">
+          <label for="SeatNumber">Number of Seats</label>
+          <input type="text" class="form-control" id="SeatNumber" name="SeatNumber" value="@Model.Item2.SeatNumber">
+     </div>
+
+     <button type="submit" class="btn btn-primary">Update</button>
+</form>

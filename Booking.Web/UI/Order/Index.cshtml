@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Booking.Application.Features.Order.OrderModel>
+<div class="container-lg">
+     <div class="table-responsive">
+               <div class="table-title">
+                    <div class="row">
+                         <div class="col-sm-8">
+                              <h2>Order <b>Details</b></h2>
+                         </div>
+                    </div>
+               </div>
+               <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                         <th>Order Id</th>
+                         <th>Car Id</th>
+                         <th>Car Model</th>
+                         <th>UserName</th>
+                         <th>Rental Start Date</th>
+                         <th>Rental End Date</th>
+                         <th>Total Amount</th>
+                         <th>Status</th>
+                         <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                         @foreach (var order in Model)
+                         {
+                                   <tr>
+                                             <td>@order.OrderId</td>
+                                                  <td>@order.CarId</td>
+                                             <td>@order.Car.ModelName</td>
+                                             <td>@order.User.UserName</td>
+                                             <td>@order.RentalStartDate</td>
+                                                  <td>@order.RentalEndDate</td>
+                                                            <td>@order.TotalAmount</td>
+                                                            <td>@order.Status.StatusName
+                                                                 <td>
+                                                                 @if (order.Status.StatusName == "Processing")
+                                                                 {
+                                                                      <form method="post" action="@Url.Action("Confirm","Order", new { id = order.OrderId })" style="display: inline;">
+                                                                           @Html.AntiForgeryToken()
+                                                                           <button type="submit" title="Confirm" class="btn btn-primary">
+                                                                                Confirm
+                                                                           </button>
+                                                                      </form>
+                                                                      <form method="post" action="@Url.Action("Cancel","Order", new { id = order.OrderId })" style="display: inline;">
+                                                                           @Html.AntiForgeryToken()
+                                                                           <button type="submit" title="Cancel" class="btn btn-danger">
+                                                                                Cancel
+                                                                           </button>
+                                                                      </form>
+                                                                 }
+                                                                 </td>
+                                   </tr>
+                         }
+                    </tbody>
+               </table>
+          </div>
+     </div>
+

@@ -1,0 +1,30 @@
+﻿@using Booking.Application.Features.Order.Commands.Confirm
+@model ConfirmOrderResponse
+
+@if (Model is not null && Model.Success == false)
+{
+     <h3>@Model.BaseMessage</h3>
+
+     @if (Model.ValidationErrors != null && Model.ValidationErrors.Any())
+     {
+          @foreach (var e in Model.ValidationErrors)
+          {
+               <p class="text-danger m-0 my-1">@e</p>
+          }
+     }
+}
+
+@if (Model is not null && Model.Success)
+{
+     <div class="alert alert-success">
+          The order was confirmed successfully
+     </div>
+}
+<button onclick="goBack()" class="btn btn-primary" style="margin-top: 10px;">Go Back</button>
+
+<!-- JavaScript function to handle going back -->
+<script>
+     function goBack() {
+         window.history.back();
+     }
+</script>
