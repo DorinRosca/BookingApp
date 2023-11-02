@@ -13,3 +13,33 @@ C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\Car-Bookin
 C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\refint\Booking.Application.dll
 C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.pdb
 C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\ref\Booking.Application.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Application.deps.json
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Application.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Application.pdb
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Domain.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Domain.pdb
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.AssemblyInfo.cs
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.csproj.CopyComplete
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\refint\Booking.Application.dll
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.pdb
+C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\NewArchitecture\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\ref\Booking.Application.dll
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Application.deps.json
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Application.dll
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Application.pdb
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Domain.dll
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\bin\Debug\net7.0\Booking.Domain.pdb
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.csproj.CopyComplete
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.dll
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\refint\Booking.Application.dll
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\Booking.Application.pdb
+C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Application\obj\Debug\net7.0\ref\Booking.Application.dll

@@ -34,14 +34,12 @@
                                         <div class="d-flex align-items-center">
                                              <form method="get" action="@Url.Action("Update", "Vehicle")" style="display: inline;">
                                                   <input type="hidden" name="VehicleId" value="@Vehicle.VehicleId">
-                                                  <button class="edit mr-2" title="EditVehicle" data-toggle="tooltip">
-                                                       <i class="material-icons">&#xE254;</i>
+                                                  <button class="update" title="EditVehicle" data-toggle="tooltip">Update
                                                   </button>
                                              </form>
                                              <form method="post" action="@Url.Action("Delete", "Vehicle")" style="display: inline;">
                                                   <input type="hidden" name="VehicleId" value="@Vehicle.VehicleId">
-                                                  <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
-                                                       <i class="material-icons">&#xE872;</i>
+                                                  <button class="delete" type="submit" title="Delete" data-toggle="tooltip">Delete
                                                   </button>
                                              </form>
                                         </div>

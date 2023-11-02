@@ -34,8 +34,7 @@
                                    <input type="hidden" class="form-control" id="RoleName" name="RoleName" value="@userRole.RoleName">
                                    <input type="hidden" class="form-control" id="UserName" name="UserName" value="@userRole.UserName">
                                    @Html.AntiForgeryToken()
-                                   <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
-                                        <i class="material-icons">&#xE872;</i>
+                                   <button class="delete" type="submit" title="Delete" data-toggle="tooltip">Delete
                                    </button>
                               </form>
                          }

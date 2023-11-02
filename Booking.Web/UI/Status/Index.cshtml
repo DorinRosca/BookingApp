@@ -31,14 +31,12 @@
                                         <div class="d-flex align-items-center">
                                              <form method="get" action="@Url.Action("Update", "Status", new { id = status.StatusId })" style="display: inline;">
                                                   @Html.AntiForgeryToken()
-                                                  <button class="edit mr-2" title="EditStatus" data-toggle="tooltip">
-                                                       <i class="material-icons">&#xE254;</i>
+                                                  <button class="update" title="EditStatus" data-toggle="tooltip">Update
                                                   </button>
                                              </form>
                                              <form method="post" action="@Url.Action("Delete", "Status", new { id = status.StatusId })" style="display: inline;">
                                                   @Html.AntiForgeryToken()
-                                                  <button class="btn btn-delete" type="submit" title="Delete" data-toggle="tooltip">
-                                                       <i class="material-icons">&#xE872;</i>
+                                                  <button class="delete" type="submit" title="Delete" data-toggle="tooltip">Delete
                                                   </button>
                                              </form>
                                         </div>

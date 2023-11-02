@@ -9,201 +9,201 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Booking.Web
 build_property.RootNamespace = Booking.Web
-build_property.ProjectDir = C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\Car-Booking-App\Booking\Booking.Web\
+build_property.ProjectDir = C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Asus\Desktop\EBS-Integrator Internship\Etapa I\.NET CORE MVC\Car-Booking-App\Booking\Booking.Web
+build_property.MSBuildProjectDirectory = C:\Users\Asus\Desktop\Car-Booking-App\Booking\Booking.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Brand/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Brand/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQnJhbmRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Brand/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Brand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQnJhbmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Brand/Update.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Brand/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQnJhbmRcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/Delete.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/Details.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/Edit.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/_CarAddError.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/_CarAddError.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXF9DYXJBZGRFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/_CarCreateValues.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/_CarCreateValues.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXF9DYXJDcmVhdGVWYWx1ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/_CarEditError.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/_CarEditError.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXF9DYXJFZGl0RXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Car/_CarEditValues.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Car/_CarEditValues.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcQ2FyXF9DYXJFZGl0VmFsdWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Drive/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Drive/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcRHJpdmVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Drive/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Drive/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcRHJpdmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Drive/Update.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Drive/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcRHJpdmVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/FuelType/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/FuelType/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcRnVlbFR5cGVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/FuelType/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/FuelType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcRnVlbFR5cGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/FuelType/Update.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/FuelType/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcRnVlbFR5cGVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Home/Error.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Home/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcSG9tZVxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Home/Success.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Home/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcSG9tZVxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Order/Cancel.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Order/Cancel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcT3JkZXJcQ2FuY2VsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Order/Confirm.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Order/Confirm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcT3JkZXJcQ29uZmlybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Order/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Order/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Order/List.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Order/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcT3JkZXJcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Order/_CreateResult.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Order/_CreateResult.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcT3JkZXJcX0NyZWF0ZVJlc3VsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Order/_CreateValues.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Order/_CreateValues.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcT3JkZXJcX0NyZWF0ZVZhbHVlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Role/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Role/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Role/Update.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Role/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcUm9sZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Shared/_Navigation.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Shared/_Navigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcU2hhcmVkXF9OYXZpZ2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Status/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Status/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcU3RhdHVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Status/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Status/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcU3RhdHVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Status/Update.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Status/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcU3RhdHVzXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Transmission/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Transmission/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVHJhbnNtaXNzaW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Transmission/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Transmission/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVHJhbnNtaXNzaW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Transmission/Update.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Transmission/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVHJhbnNtaXNzaW9uXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/User/AddRole.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/User/AddRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVXNlclxBZGRSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/User/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/User/Login.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/User/SignUp.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/User/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVXNlclxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Vehicle/Create.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Vehicle/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVmVoaWNsZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Vehicle/Index.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Vehicle/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVmVoaWNsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Vehicle/Update.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Vehicle/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcVmVoaWNsZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/_ViewImports.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/_ViewStart.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asus/Desktop/EBS-Integrator Internship/Etapa I/.NET CORE MVC/Car-Booking-App/Booking/Booking.Web/UI/Shared/_Layout.cshtml]
+[C:/Users/Asus/Desktop/Car-Booking-App/Booking/Booking.Web/UI/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = VUlcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5ehk7b4b8g
